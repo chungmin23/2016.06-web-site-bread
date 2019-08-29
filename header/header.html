@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=3.0, minimum-scale=0.9">
+    <title>PAN DE PAN</title>
+    <link rel="stylesheet" type="text/css" href="./common1.css">
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipnavigation">
+            <a href="javascript: $('#skipnavigation a:eq(0)').click()">메뉴로 가기</a>
+            <a href="javascript: $('#skipnavigation a:eq(1)').click()">메인으로 가기</a>
+        </div>
+        <div id="header">
+            <img src="../img/header.jpg" width="100%">
+            <div class="mo_head_cont">
+                <div class="mo_logo_area">
+                    <a href="../index.html"><h1><img src="../img/mo_logo.png" width="100%"></h1></a>
+                </div>
+                <div class="gnb_more">
+                    <img src="../img/more.png" width="100%">
+                </div>
+            </div>
+            <div class="head_top">
+                <div class="gnb_sec">
+                    <div class="gnb_area">
+                        <ul>
+                            <li><a href="#"><p class="login">Login</p></a></li>
+                            <li><a href="#"><p class="signup">Sign Up</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="head_bt">
+                <div class="menu_sec">
+                    <div class="logo_area">
+                        <h1><a href="../index.html"><div class="logo"></div></a></h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#"><p>PAN DE PAN</p></a></li>
+                            <li><a href="#"><p>PRODUCTS</p></a></li>
+                            <li><a href="#"><p>STORE</p></a></li>
+                            <li><a href="#"><p>CUSTOMER CENTER</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_bar2"></div>
+                <div class="menu_bar1"></div>
+                <div class="sub_menu">
+                    <div class="sub_area">
+                        <ul>
+                            <li><a href="../de/index.html"><p>대표 인사말</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../bread/index.html"><p>팡드팡 Bread</p></a></li>
+                            <li><a href="../cake/index.html"><p>팡드팡 Cake</p></a></li>
+                            <li><a href="../coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                            <li><a href="../header/header.html"><p>가맹점 개설안내</p></a></li>
+                            <li><a href="../chang/chang.html"><p>창업절차</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../notice/index.html"><p>공지사항</p></a></li>
+                            <li><a href="../story/index.html"><p>팡드팡 Story</p></a></li>
+                            <li><a href="../board/index.html"><p>게시판</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cont s -->
+        <div id="container">
+            <div class="head_area">
+                <img src="../img/header.jpg" width="100%;">
+            </div>
+            
+            <!-- main -->
+            <div id="gnb_cover"></div>
+            <div class="login_cont">
+                <div class="login_area">
+                    <div class="stemp_logo"></div>
+                    <div class="login_logo"></div>
+                    <div class="id"><input class="login_input" type="text" placeholder="ID"></div>
+                    <div class="password"><input class="login_input" type="password" placeholder="PASSWORD"></div>
+                    <div class="id_search_box"><p>ID찾기</p></div>
+                    <div class="pass_search_box"><p>PASSWORD찾기</p></div>
+                    <div class="signup_box_s"><p>회원가입</p></div>
+                    <div class="login_box"><p>로그인</p></div>
+                </div>
+                <div class="exit"></div>
+            </div>
+            <div class="signup_cont">
+                <div class="signup_logo"></div>
+                <div class="exit"></div>
+                <ul class="info_sec">
+                    <li><input type="text" placeholder="ID를 입력하세요."></li>
+                    <li><input type="password" placeholder="비밀번호를 입력하세요."></li>
+                    <li><input type="password" placeholder="비밀번호 재확인."></li>
+                </ul>
+                <ul class="personal_data">
+                    <li class="name_sec"><input type="text" placeholder="이름"></li>
+                    <li class="gender"><div class="male">남자</div><div class="female">여자</div></li>
+                    <li class="birth">
+                        <ul>
+                            <li class="birth_box">생일</li>
+                            <li class="date"><input type="text" placeholder="년(4자리)"><div class="cont_bar"></div></li>
+                            <li class="date"><input type="text" placeholder="월"><div class="cont_bar"></div></li>
+                            <li class="date"><input type="text" placeholder="일"></li>
+                        </ul>
+                    </li>
+                    <li class="email"><input type="text" placeholder="이메일"></li>
+                    <li class="contact"><input type="text" placeholder="연락처"></li>
+                </ul>
+                <div class="signup_box">회원가입</div>
+            </div>
+            <div class="search">
+                <div class="search_area">
+                    <div class="stemp_logo"></div>
+                    <div class="login_logo"></div>
+                    <div class="name_s"><input type="text" placeholder="이름"></div>
+                    <div class="email_s"><input type="text" placeholder="E-mail"></div>
+                    <div class="mail_box"><p>메일전송</p></div>
+                    <div class="s_box">
+                        <div class="s_id"><p>ID찾기</p></div><div class="s_pass"><p>비밀번호 찾기</p></div>
+                    </div>
+                </div>
+                <div class="exit"></div>
+            </div>
+            <div class="m_menu">
+                <ul>
+                    <li class="m_logosec">
+                        <a href="../index.html"><div class="menu_logo"></div></a>
+                        <img class="menu_more" src="../img/more.png" width="100%">
+                    </li>
+                    <li class="m_loginsec">
+                        <div class="m_login"><p>LOGIN</p></div>
+                        <div class="m_signup"><p>SIGN UP</p></div>
+                    </li>
+                    <ul class="m_subsec">
+                        <li>
+                            <div class="m_sub_b"><p>PAN DE PAN</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../de/index.html"><p>대표 인사말</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>PRODUCT</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../bread/index.html"><p>팡드팡 Bread</p></a></li>
+                                <li><a href="../cake/index.html"><p>팡드팡 Cake</p></a></li>
+                                <li><a href="../coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>STORE</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                                <li><a href="../header/header.html"><p>가맹점 개설안내</p></a></li>
+                                <li><a href="../chang/chang.html"><p>창업절차</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>CUSTOMER CENTER</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../notice/index.html"><p>공지사항</p></a></li>
+                                <li><a href="../story/index.html"><p>팡드팡 Story</p></a></li>
+                                <li><a href="../board/index.html"><p>게시판</p></a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="container1_2">
+                <img src="../img/yes.jpg" width="100%;">
+            </div>
+        </div>
+        <div class="fix_one">
+            <p class="fix_one2">최소의 창업 비용으로 최고의 품격</p>
+        </div>
+        <div class="fix_one_2">
+        </div>  
+        <div class="fix_one_3"> 
+            <p class="fix_one_text">가맹점 개설안내</p>
+        </div>
+         <img class="graybackground" src="../img/graybackground.jpg" art="팡드팡은 가맹점주님들과 함께합니다 철저한 상권분석은 물론 전략적 마케팅의 지원 및 홍보까지.">
+        <img class="whitebackground" src="../img/whitebackground.jpg">
+        <div class="container2">
+           
+            <div class="calculator0">
+             <img class="calculator" src="../img/calculator.jpg">
+             <p class="textpandepan">팡드팡 가맹 개설비용</p>
+            </div>
+            <table width="100%" cellspacing="0" border="1" summary="팡드팡 개설비용" class="tbl_type">
+            <style>
+            table { width:100%;}
+            th,td {border:1px solid #aaa; height:30px;}
+            thead th, thead td{background: #262626;}
+            tbody th{ background:white;}
+            .first{}
+            .all{background-color:#9f9f9f; color:white;}
+            .all2{background-color:#9f9f9f;color:white;}
+            .tablefooter{background-color:#c2c0ca;}
+            </style>
+            <thead>
+            <tr class="zero">
+            <th colspan="2" rowspan="2" scope="col">구분</th>
+            <th colspan="1" rowspan="1" scope="col">면적</th>
+            <th colspan="2" rowspan="2" scope="col">비고</th>
+            </tr>
+            <tr class="zero1">
+            <th colspan="1" rowspan="1" scope="col">33m²(구10평형)</th>
+            </tr>
+            </thead> 
+            <tfoot class="tablefooter">
+            <tr>
+                <th colspan="2" rowspan="2" scope="col">합게</th>
+                <th colspan="1" rowspan="1" scope="col">59,000,000</th>
+                <th colspan="2" rowspan="1" scope="col"></th>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <th class="first" colspan="1" rowspan="4" scope="col">계약</th>
+                <th colspan="1" rowspan="1" scope"col">가맹비</th>
+                <th colspan="1" rowspan="1" scope"col">5,000,000</th>
+                <th colspan="2" rowspan="1" scope"col">상품권 사용</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="1" scope="col">교육비</th>
+                <th colspan="1" rowspan="1" scope"col">2,000,000</th>
+                <th colspan="2" rowspan="1" scope"col">2인/1주/1일 6시간</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="1" scope="col">계약이행 보증금</th>
+                <th colspan="1" rowspan="1" scope="col">3,000,000</th>
+                <th colspan="2" rowspan="1" scope="col">보증보험증서</th>
+            </tr>
+            <tr>
+                <th class="all" colspan="4" rowspan="1" scope="col">소계&nbsp&nbsp&nbsp&nbsp&nbsp7,000,000</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="3" scope="col">시설</th>
+                <th colspan="1" rowspan="1" scope="col">시설 인테리어</th>
+                <th colspan="1" rowspan="1" scope="col">18,000,000</th>
+                <th colspan="2" rowspan="1" scope="col">3.3m당 180만원(10평이하 동일금액 적용)</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="1" scope="col">주방기기</th>
+                <th colspan="1" rowspan="1" scope="col">30,000,000</th>
+                <th colspan="2" rowspan="1" scope="col">소도구, 쇼케이스 별도</th>
+            </tr>
+            <tr>
+                <th class="all2"colspan="4" rowspan="1" scope="col">소계&nbsp&nbsp&nbsp&nbsp&nbsp48,000,000</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="2" scope="col">기타</th>
+                <th colspan="1" rowspan="1" scope="col">비품</th>
+                <th colspan="1" rowspan="1" scope="col">3,000,000</th>
+                <th colspan="2" roespan="1" scope="col">POS, 커피머신, 유니폼, 앞치마 등</th>
+            </tr>
+            <tr>
+                <th colspan="1" rowspan="1" scope="col">홍보물</th>
+                <th colspan="1" rowspan="1" scope="col">1,000,000</th>
+                <th colspan="2" rowspan="1" scope="col">전단지, 배너 및 등신대, 명함</th>
+            </tr>
+            </table>
+            <p class="text"> &nbsp★&nbsp&nbsp 위 금액은점포 개설시 평균치를 기준으로 한 상담자료로서 제시된 금액은 점포구조 및 공사기간, 물가변동에 따라
+                변경될될 수 있습니다.</p>
+            <p class="text2">&nbsp★&nbsp&nbsp 별도공사 : 내부인테리어(소방, 방염, 화장실, 소화기류, 스피커, 주방천정)</p>
+            <p class="text3">   외부익스테리어(철거, 닥트, 
+                전기증설, 도시가스, 자동문, 테라스, 간판, 어닝)</p><br>
+            <p class="text4">&nbsp★&nbsp&nbsp  자체구입품목 : 온수기, 냉난방기, 전자제품 일부 등<br></p>
+            <div class="text5box">
+                <p id="text5">창업대출 알선</p>
+                <div class="text6">소상공인시장진흥공단, 대구신용보증재단 정책자금대출지원</div>
+                <div class="text7">팡드팡과 계약 체결된 대구은행, 하나은행 협약보증부대출</div>
+                <div class="text8">5,000만원 한도/ 5년/ 연 3.69% 변동금리</div>
+            </div>
+            <div class="text9">
+                <img class="graft" src="../img/graft.png">
+                <p class="text10">팡드팡 수익성 
+                    <input type="button" value="분석" onClick="btnClick()">
+                    <script>
+                        function btnClick()
+                        {
+                            alert("영업이익\n 7,000,000");
+                        }
+                    </script></p>  
+            </div>
+            <table width="100%" cellspacing="0" border="1" summary="팡드팡 개설비용" class="tbl_type2">
+            <style>
+            table { margin-top:42px; width:100%;}
+            th,td {border:1px solid #aaa; height:30px;}
+            thead th, thead td{background: #262626;}
+            tbody th{ background:white;}
+            .2table{background-color:black; color:white;}
+            .tablefooter2{background-color:#c2c0ca;}
+            .tablebody2{background-color:#9f9f9f; color:#fff;}
+            </style>
+            <thead>
+            <tr class="2table" style="color:#fff;">
+                <th colspan="2" rowspan="1" scope="col">구분</th>
+                <th colspan="1" rowspan="1" scope="col">금액</th>
+                <th colspan="1" rowspan="1" scope="col">비율</th>
+                <th colspan="2" rowspan="1" scope="col">비고</th>
+            </tr>
+            </thead> 
+            <tr>
+                <th colspan="2" rowspan="1" scope="col">매출액</th>
+                <th colspan="1" rowspan="1" scope="col">30,000,000</th>
+                <th colspan="1" rowspan="1" scope="col">100%</th>
+                <th colspan="2" rowspan="1" scope="col">일매출 100만원</th>
+            </tr>
+            <tr>
+                <th colspan="2" rowspan="1" scope="col">매출원가</th>
+                <th colspan="1" rowspan="1" scope="col">9,000,000</th>
+                <th colspan="1" rowspan="1" scope="col">30%</th>
+                <th colspan="2" rowspan="1" scope="col">±매장에 따라 상이함</th>
+            </tr>
+                <th colspan="2" rowspan="1" scope="col">매출이익</th>
+                <th colspan="1" rowspan="1" scope="col">21,000,000</th>
+                <th colspan="1" rowspan="1" scope="col">70%</th>
+                <th colspan="2" rowspan="1" scope="col">매출액 -매출원가</th>
+            </tr>
+           <tfoot class="tablefooter2">
+                <tr>
+                    <th colspan="2" rowspan="2" scope="col">영업이익</th>
+                    <th colspan="1" rowspan="1" scope="col">7,000,000</th>
+                    <th colspan="1" rowspan="1" scope="col">23.3%</th>
+                    <th colspan="2" rowspan="1" scope="col"></th>
+                </tr>
+            </tfoot>
+            <tbody class="tabletbody2">
+                <tr>
+                    <th colspan="1" rowspan="4" scope="col">일반관리비</th>
+                    <th colspan="1" rowspan="1" scope="col">임차료</th>
+                    <th colspan="1" rowspan="1" scope="col">2,000,000</th>
+                    <th colspan="1" rowspan="1" scope="col">6.7%</th>
+                    <th colspan="2" rowspan="1" scope="col">관리비 포함</th>
+                </tr>
+                <tr>
+                    <th colspan="1" rowspan="1" scope="col">인건비</th>
+                    <th colspan="1" rowspan="1" scope="col">9,000,000</th>
+                    <th colspan="1" rowspan="1" scope="col">30%</th>
+                    <th colspan="2" rowspan="1" scope="col">제빵사:2~3인/알바:2~3인</th>
+                </tr>
+                <tr>
+                    <th colspan="1" rowspan="1" scope="col">수도광열비</th>
+                    <th colspan="1" rowspan="1" scope="col">1,000,000</th>
+                    <th colspan="1" rowspan="1" scope="col">3.3%</th>
+                    <th colspan="2" rowspan="1" scope="col">전기, 수도, 가스외</th>
+                </tr>
+                <tr>
+                    <th colspan="1" rowspan="1" scope="col">기타경비</th>
+                    <th colspan="1" rowspan="1" scope="col">2,00,000</th>
+                    <th colspan="1" rowspan="1" scope="col">6.7%</th>
+                    <th colspan="2" rowspan="1" scope="col">POS관리비,4대보험,식대</th>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <!-- foot s -->
+        <div id="footer">
+            <div class="foot_area">
+                <div class="foot_text"><strong>PAN DE PAN&nbsp;</strong><p>대구시 중구 동덕로 30길 110(삼덕3가 137-4)</p>
+                    <em>COPYRIGHT BY&nbsp;</em><b>PAN DE PAN&nbsp;</b><em>ALL RIGHT RESERVED.</em></div>
+                <div class="foot_tel"><strong>TEL. 1588-4459</strong></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

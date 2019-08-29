@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@font-face { font-family: 'Daum'; src:url('http://dlcndals20.dothome.co.kr/font2/Daum_Regular.ttf')  format("truetype"),
+    url('http://dlcndals20.dothome.co.kr/font2/Daum_Regular.woff') format("woff"),
+    url('http://dlcndals20.dothome.co.kr/font2/Daum_Regular.eot') format("eot")
+}
+@font-face { font-family: 'helveticabold'; src:url('http://ljw1737.dothome.co.kr/m/po/font/Helvetica Narrow Bold.ttf') format("truetype"),
+    url('http://ljw1737.dothome.co.kr/m/po/font/Helvetica Narrow Bold.woff') format("woff"),
+    url('http://ljw1737.dothome.co.kr/m/po/font/Helvetica Narrow Bold.eot') format("eot");
+}
+@font-face { font-family: "Helvetica";
+    src: url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.eot");
+    src: url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.svg#Helvetica-Narrow") format("svg");
+}
+/* 초기화 */
+html,body{margin: 0; padding: 0;}
+ul,li {list-style: none;}
+img {border: 0px;}
+a {text-decoration: none;}
+em,i,p {font-style: normal;}
+strong,b {font-weight: 600;}
+em,i,p,strong,b {margin: 0; padding: 0; display: inline-block; font-family: 'daum','helvetica'}
+ol,ul,li {list-style: none; margin: 0; padding: 0;}
+span {position: absolute; top: -9999px;}
+h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
+img{display: block;}
+input {border: 0;}
+#wrap {width: 100%; overflow: hidden;}
+
+/* header start */
+#skipnavigation a{position: absolute; left: -9999px;}
+#skipnavigation a:focus, #skipnavigation a:active {text-align: center; position: absolute; left: 0; top: 0; width: 100%; height: 30px; line-height: 30px; color: #262626; z-index: 50; background: #fff; outline: 0;}
+#header {width: 100%; height: 115px; position: relative; min-width: 980px; }
+#header > img {display: none;}
+.head_top {height: 0; position: relative; background-color: #262626; overflow: hidden;}
+.gnb_sec {margin: 0 auto; width: 60.8%; height: 43px; line-height: 43px; font-size: 18px; text-align: center; color: white;}
+.gnb_area {width: 25%; float: right;} 
+.gnb_area li {width: 50%; height: 43px; float: left; white-space: nowrap;}
+.gnb_area li p {cursor: pointer}
+.gnb_area li p:hover {color: #999;}
+.head_bt {height: 72px; position: fixed; top: 0; width: 100%; z-index: 10; background: #262626; min-width: 980px;}
+.menu_sec {height: 72px; position: relative; width: 100%;}
+.logo_area {width: 19.6%; height: 72px; float: left; min-width: 190px; display: inline-block;}
+.logo {background: url("../img/pan_sp.png") 0 0; width: 190px; height: 27px; position: relative; margin: 0 auto; margin-top: 22px; overflow: hidden; cursor: pointer}
+.mo_head_cont {width: 100%; position: absolute; top: 0; display: none;}
+.gnb_more {width: 8.3%; position: absolute; right: 5%; top: 27.7%; display: none; cursor: pointer;}
+.mo_logo_area {width: 54%; position: relative; margin: 0 auto; display: none;}
+.menu {position: relative; margin: 0 auto; text-align: center; width: 60.8%; white-space: nowrap;}
+.menu ul {width: 100%; height: 72px; color: #fff; white-space: nowrap; line-height: 72px;}
+.menu li {width: 25%; height: 72px; float: left; font-size: 18px;}
+.menu li p {margin: 0 auto; cursor: pointer;}
+.menu li p:hover {color: #ccc;}
+.menu_bar1 {height: 1px; width: 100%; background: #000000; position: absolute; bottom: 1px;}
+.menu_bar2 {height: 1px; width: 100%; background: #515151; position: absolute; bottom: 0;}
+.sub_menu { width: 100%; height: 270px; position: absolute; top: 72px; background: #262626; opacity: 0.8; overflow: hidden; z-index: 5; min-width: 980px;}
+.sub_area { margin: 0 auto; width: 60.8%; position: relative; height: 270px; white-space: nowrap; }
+.sub_area ul {width: 25%; height: 270px; float: left; overflow: hidden; font-size: 14px; color: white; text-align: center;}
+.sub_area li {width: 100%; height: 25%; line-height: 67.5px;}
+.sub_area li p {margin: 0 auto; cursor: pointer; color:white;}
+.sub_area li p:hover {color: #999;}
+
+/* login sing up*/
+#gnb_cover { width: 100%; height: 100%; top:0; z-index: 15; position: fixed; background: #262626; display: none;}
+.login_cont p{color: #bcb493;}
+.login_cont { width: 654px; height: 816px; position: fixed; top: 40px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none;}
+.signup_cont { width: 654px; height: 816px; position: fixed; top: 40px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none;}
+.stemp_logo {background: url(../img/logo2.png); width: 580px; height: 584px; position: absolute; top: 88px; margin: 0 37px;}
+.login_logo {background: url(../img/pan_sp.png)-176px 0; width: 500px; height: 71px; background-size: 1500px auto; position: absolute; top: 226px; margin: 0 77px; }
+.id { width: 340px; height: 68px; position: relative;  background: #fff; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 370px 0 0 116px; }
+.login_input {padding: 20px 32px; width: 274px; height: 26px; overflow: hidden; font-size: 17px; color: #bcb493; font-family: 'daum','helvetica'}
+.password {width: 340px; height: 68px; position: relative;  background: #fff; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 26px 0 0 116px;}
+.id_search_box { width: 112px; height: 40px; position: relative; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 26px 0 0 116px; display: inline-block; line-height: 36px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.id_search_box:hover p {color: #ac9843}
+.pass_search_box { width: 194px; height: 40px; position: relative; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 26px 9px 0 6px; display: inline-block; line-height: 36px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.pass_search_box:hover p {color: #ac9843}
+.signup_box_s {width: 112px; height: 40px; position: relative; border: 1px solid #e4e4e4; box-sizing: border-box; margin-top: 26px; display: inline-block; line-height: 36px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.signup_box_s:hover p {color: #ac9843}
+.login_box { float: right; width: 89px; height: 162px; position: absolute; top: 370px; right: 94px; border: 1px solid #e4e4e4; box-sizing: border-box; line-height: 160px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.login_box:hover p {color: #ac9843}
+.exit {background: url(../img/multiplication_x_u2715_icon_80x80.png);width: 40px; height: 40px; background-size: 40px auto; position: absolute; top: 20px; right: 20px; cursor: pointer;}
+.signup_cont {width: 654px; height: 816px; position: fixed; top: 50px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none;}
+.signup_logo {background: url(../img/pan_sp.png)-141px 0; width: 400px; height: 57px; background-size: 1200px auto; position: relative; margin: 0 auto; margin-top: 80px; }
+.info_sec {width: 400px; height: 218px; position: relative; margin: 0 auto; margin-top: 44px; border: 1px solid #e4e4e4; background: #fff;}
+.info_sec li {width: 100%; height: 72px; border-bottom: 1px solid #cec9b0}
+.info_Sec li:last-child {border-bottom: 0;}
+.info_sec input {height: 20px; width: 352px; line-height: 20px; padding: 26px 24px; font-size: 12px; color: #bcb493;}
+.personal_data {width: 400px; height: 211px; position: relative; margin: 0 auto; margin-top: 22px; border: 1px solid #e4e4e4; background: #fff;}
+.name_sec {width: 100%; height: 42px; border-bottom: 1px solid #cec9b0; position: relative;}
+.name_sec input {height: 20px; width: 352px; line-height: 20px; padding: 11px 24px; font-size: 12px; color: #bcb493;}
+.gender{height: 47px; width: 100%; border-bottom: 1px solid #cec9b0; position: relative; text-align: center;}
+.male { width: 176px; height: 30px; border: 1px solid #cec9b0; position: relative; display: inline-block; line-height: 30px; text-align: center; top: 7px; font-size: 12px; color: #bcb493; cursor: pointer;}
+.female { width: 176px; height: 30px; border: 1px solid #cec9b0; position: relative; display: inline-block; line-height: 30px; text-align: center; top: 7px; font-size: 12px; color: #bcb493; cursor: pointer;}
+.birth {height: 43px; width: 100%; border-bottom: 1px solid #cec9b0; position: relative; }
+.birth_box {width: 32px; line-height: 43px; height: 100%; border-right: 1px solid #cec9b0; float: left; overflow: hidden; text-align: center; font-size: 11px; color: #bcb493;}
+.date {width: 123px; height: 100%; float: left; position: relative;}
+.date:last-child {width: 121px;}
+.date input { width: 73px;  height: 20px; padding:11.5px 24px; font-size: 12px;}
+.cont_bar {width: 2px; height: 13px; background: #cec9b0; margin-top: 15px; float: right;}
+.email {height: 38px; width: 100%; border-bottom: 1px solid #cec9b0; position: relative; }
+.email input { height: 20px; width: 352px; line-height: 20px; padding: 9px 24px; font-size: 12px; color: #bcb493;}
+.contact {height: 39px; width: 100%; position: relative;}
+.contact input { height: 20px; width: 352px; line-height: 20px; padding: 9px 24px; font-size: 12px; color: #bcb493;}
+.signup_box {width: 400px; height: 38px; background: #fff; color: #bcb493; line-height: 38px; border: 1px solid #cec9b0; text-align: center; margin: 0 auto; margin-top: 46px; font-size: 13px; cursor: pointer;}
+.text-placeholder { color: #bcb493;}
+::-webkit-input-placeholder { color: #bcb493;}
+textarea:-moz-placeholder, input:-moz-placeholder { color: #bcb493;}
+
+/* search */
+.search{ width: 654px; height: 816px; position: fixed; top: 40px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none; }
+.search p {color: #bcb493;}
+.search input { width: 100%; height: 100%; padding: 23px 24px; box-sizing: border-box; font-size: 17px; color: #bcb493;}
+.name_s {width: 438px; height: 66px; margin: 0 auto; margin-top: 360px; position: relative; background: #fff; border: 1px solid #e4e4e4; }
+.email_s {width: 328px; height: 66px; margin: 26px 5px 0 108px; position: relative; background: #fff; border: 1px solid #e4e4e4; display: inline-block;}
+.mail_box {width: 95px; height: 66px; margin-top: 26px; position: relative; background: #fff; border: 1px solid #e4e4e4; display: inline-block; text-align: center; line-height: 64px; font-size: 17px; cursor: pointer;}
+.s_box {width: 440px; height: 68px; margin: 0 auto; margin-top: 156px; position: relative; background: #fff; border: 1px solid #e4e4e4; box-sizing: border-box;}
+.s_id {width: 50%; height: 100%; float: left; line-height: 66px; border-right: 1px solid #e4e4e4; box-sizing: border-box ; text-align: center; cursor: pointer; font-size: 17px;}
+.s_id:hover p, .s_pass:hover p, .mail_box:hover p {color: #ac9843}
+.s_pass {width: 50%; height: 100%; float: right; line-height: 66px; border-left: 1px solid #e4e4e4; box-sizing: border-box; text-align: center; cursor: pointer; font-size: 17px;}
+
+/* mobile menu */
+.m_menu { width: 80%; height: 0; position: fixed; background: #262626; border: 1px solid #fff; right: 0; top: 0; display: none; z-index: 30; min-width: 250px;}
+.m_menu li { width: 100%; position: relative; text-align: center;  font-size: 18px;}
+.m_login { width: 50%; height: 100%; border-right: 1px solid #fff; float: left; box-sizing: border-box; cursor: pointer;}
+.m_signup { width: 50%; height: 100%; float: right; border-left: 1px solid #fff; box-sizing: border-box; cursor: pointer;}
+.m_logosec {height: 83px; border-bottom: 2px solid #fff; cursor: pointer;}
+.menu_logo {background: url(../img/pan_sp.png)-61px 0; width: 174px; height: 40px; position: relative; margin: 0 auto; top: 21.5px; background-size: 522px 474px;}
+.menu_more {width: 40px; height: 35px; position: absolute; top: 22px; right: 20px;}
+.m_loginsec {height: 35px; line-height: 35px; cursor: pointer; border-bottom: 2px solid #fff;}
+.m_subsec {width: 100%; line-height: 43px; position: relative; cursor: pointer;}
+.m_subsec ul li {position: relative; height: 43px; background: #fff; width: 100%; border-bottom: 1px solid #262626; font-size: 14px; overflow: hidden;}
+.m_subsec ul {display: none;}
+.m_sub_b {height: 43px; background: #262626; border-bottom: 2px solid #fff; position: relative;}
+.m_sub_b p {color: #fff; font-size: 18px;}
+.m_sub_w { height: 43px; background: #f6f5ef; border-bottom: 2px solid #262626; position: relative;}
+.m_subsec ul li p {color: #262626; font-size: 14px;}
+.m_subsec ul li:hover { background: #262626;}
+.m_subsec ul li:hover p {color: #fff;}
+.m_subsec ul li:last-child {border-bottom: 0;}
+.down_arrow { background: url(../img/pan_sp.png); background-position: 0 -60px; width: 23px; height: 15px; position: absolute; top: 14px; right: 10px; background-size: 960px auto;}
+.arrow_black { background: url(../img/pan_sp.png); background-position: 0 -80px; width: 23px; height: 15px; position: absolute; top: 14px; right: 10px; background-size: 960px auto;}
+
+/* header end, container start */
+#container { width:100%; position: relative;}
+.hellow_bar{width:100%; height:74px; background-color:black; text-align:center;}
+.hellow_text{font-size:30px; color:white; margin-top: 18px; letter-spacing: 5px;}
+.hellow_container{ padding-top:108px; width:100%; height:985px; background-color: #f6f5ef; position: relative; text-align: center; }
+.hellow_box {font-size:30px; color:black; line-height: 60px;  min-width: 1107px; text-align: left; text-align: left;}
+.hellow_box em{ float: right; }
+.head_area {position: relative; display: none;}
+.m_subsec p{width:100%; height: 100%;}
+/* container end, footer start */
+#footer{height: 225px; position: relative; background: #262626; color:white;}
+.foot_area { margin: 0 auto; height: 100%; width: 1130px; position: relative;}
+.foot_text { width: 785px; height: 72px; position: relative; padding: 82px 6.3% 0 0; float: left;}
+.foot_tel { width: 273px; height: 48px; position: relative; margin-top: 102px; float: right;}
+.foot_text strong {font-size:32px; color: white; font-family: 'helveticabold'; }
+.foot_text p {font-size: 27px; font-family: 'Daum';}
+.foot_text em {font-size: 27px; font-family: 'helvetica'; }
+.foot_text b {font-size: 27px; display: inline-block;}
+.foot_tel strong {font-size: 36px; font-family: 'helvetica'; white-space: nowrap;}
+
+@media (min-width: 680px) and (max-width: 980px){
+    #header{ min-width: 680px;}
+    .logo_area{display: none;}
+    .head_bt {min-width: 680px;}
+    .gnb_area {width: 27%;}
+    .menu { width: 80%;}
+    .gnb_sec {width: 85%;}
+    .sub_menu {min-width: 680px;}
+    .sub_area {width: 80%;}
+    #footer {height: 157px;}
+    .foot_text strong {font-size: 22px;}
+    .foot_text p {font-size: 18px;}
+    .foot_text em {font-size: 18px;}
+    .foot_text b {font-size: 18px;}
+    .foot_tel strong {font-size: 25px;}
+    .foot_text {width: 530px; padding: 57px 6.3% 0 0;}
+    .foot_tel {width: 148px; margin-top: 70px}
+    .foot_area {width: 760px; height: 157px;}
+}
+
+@media (min-width: 420px) and (max-width: 680px){
+    #wrap {min-width: 320px; overflow: hidden;}
+    #header {width: 100%; position: fixed; text-align: center; z-index: 5; min-width: 320px;}
+    #header > img {display: block;}
+    .gnb_more {display: block;}
+    .mo_head_cont {display: block;}
+    .head_top { display: none;}
+    .head_bt {display: none;}
+    .head_area {display: block;}
+    .mo_logo_area{display: block;}
+    #footer {height: 56px;}
+    .foot_text strong {font-size: 12px;}
+    .foot_text p {font-size: 10px;}
+    .foot_text em {font-size: 10px;}
+    .foot_text b {font-size: 10px;}
+    .foot_tel strong {font-size: 14px;}
+    .foot_text {width: 295px; height: 34px; padding: 10px 6.3% 0 0;}
+    .foot_tel {width: 90px; height: 20px; margin-top: 20px}
+    .foot_area {width: 415px; height: 56px;}
+    #gnb_cover {background: #fff;}
+    .login_cont, .signup_cont, .search {width: 100%; height: 100%; position: fixed; top: 0; left: 0; margin-left: 0;}
+    .stemp_logo { width: 290px; height: 292px; position: absolute; top: 144px; margin: 0 18px; background-size: 290px auto;}
+    .login_logo {background: url(../img/pan_sp.png)-88px 0; position: relative; width: 250px; height: 36px; background-size: 750px auto; margin: 0 auto; margin-top: 0;}
+    .id { width: 170px; height: 34px; margin: 250px 0 0 58px; }
+    .login_input {padding: 10px 16px; width: 100%; height: 100%; font-size: 11px; box-sizing: border-box;}
+    .password {width: 170px; height: 34px; margin: 13px 0 0 58px;}
+    .id_search_box { width: 56px; height: 20px; margin: 13px 0 0 58px; line-height: 18px; font-size: 11px;}
+    .pass_search_box { width: 97px; height: 20px; margin: 13px 4.5px 0 3px; line-height: 18px; font-size: 11px;}
+    .signup_box_s {width: 56px; height: 20px; margin-top: 13px; line-height: 18px; font-size: 11px;}
+    .login_box { float: right; width: 44px; height: 81px; top: 286px; right: 34px; line-height: 80px; font-size: 11px; }
+    .login_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .signup_logo {background: url(../img/pan_sp.png)-71px 0; width: 200px; height: 29px; background-size: 600px auto; margin-top: 70px; }
+    .info_sec {width: 200px; height: 109px; margin-top: 22px;}
+    .info_sec li { height: 36px;}
+    .info_sec input { width: 100%; height: 100%; padding: 13px 12px; font-size: 10px; box-sizing: border-box;}
+    .personal_data {width: 200px; height: 120px; margin-top: 11px; }
+    .name_sec {width: 100%; height: 22px;}
+    .name_sec input {width: 100%; height: 100%; padding: 0 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .gender{height: 28px; width: 100%;}
+    .male { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .female { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .birth {height: 22px; width: 100%; }
+    .birth_box {width: 26px; line-height: 22px; font-size: 10px;}
+    .date {width:58px; height: 22px;}
+    .date:last-child {width: 57px;}
+    .date input { width: 57px;  height: 22px; padding: 0px 6px; line-height: 22px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .cont_bar {width: 1px; height: 7px; margin-top: 7px;}
+    .email {height: 22px; }
+    .email input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .contact {height:  22px;}
+    .contact input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .signup_box {width: 200px; height: 19px; line-height: 19px; margin-top: 23px; font-size: 12px;}
+    .exit { width: 30px; height: 30px; background-size: 30px 30px;}
+    .search input { width: 100%; height: 100%; padding: 11px 12px; font-size: 11px;}
+    .name_s {width: 219px; height: 33px; margin-top: 180px; }
+    .email_s {width: 161px; height: 33px; margin: 13px 3px 0 50px; }
+    .mail_box {width: 47px; height: 33px; margin-top: 13px; line-height: 32px; font-size: 11px;}
+    .s_box {width: 220px; height: 34px; margin-top: 78px; }
+    .s_id {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .s_pass {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .search_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .search_area .stemp_logo {top: 80px;}
+    .search_area .login_logo {top: 150px;}
+    .head_area {display: block}
+    /* mobile container */
+    .hellow_text{font-size: 25px; margin-top: 20px;}
+    .hellow_box{font-size: 13px; min-width: 550px;  line-height: 40px; }
+    .hellow_container{padding-top: 70px; height: 685px; } 
+    .hellow_box em{float:left;}
+    .m_loginsec p{color:white;}
+}
+@media (min-width: 0) and (max-width: 420px){
+    #wrap {min-width: 320px; overflow: hidden;}
+    #header {width: 100%; position: fixed; text-align: center; z-index: 5; min-width: 320px;}
+    #header > img {display: block;}
+    .gnb_more {display: block;}
+    .mo_head_cont {display: block;}
+    .head_top { display: none;}
+    .head_bt {display: none;}
+    .head_area {display: block;}
+    .mo_logo_area{display: block;}
+    .foot_text strong {font-size: 12px;}
+    .foot_text p {font-size: 10px;}
+    .foot_text em {font-size: 10px;}
+    .foot_text b {font-size: 10px;}
+    .foot_tel strong {font-size: 14px;}
+    .foot_text {width: 295px; height: 34px; padding: 7px 6.3% 0 0;}
+    #footer { height: 95px; }
+    .foot_area { width: 300px; height: 70px;}
+    .foot_tel {position: absolute; left: 0; top: 50px;width: 90px; height: 20px; margin-top: 0;}
+    #gnb_cover {background: #fff;}
+    .m_menu li {font-size: 16px;}
+    .m_sub_h p { font-size: 16px;}
+    .m_sub_b p { font-size: 13px;}
+    .menu_more {width: 30px; height: 26px; top: 28px;}
+    .menu_logo {height: 30px; top: 29px; left: -24px; background-size: 522px 355px;}
+    .login_cont, .signup_cont, .search {width: 100%; height: 100%; position: fixed; top: 0; left: 0; margin-left: 0; min-width: 320px}
+    .stemp_logo { width: 290px; height: 292px; position: absolute; top: 144px; margin: 0 18px; background-size: 290px auto;}
+    .login_logo {background: url(../img/pan_sp.png)-88px 0; position: relative; width: 250px; height: 36px; background-size: 750px auto; margin: 0 auto; margin-top: 0;}
+    .id { width: 170px; height: 34px; margin: 250px 0 0 58px; }
+    .login_input {padding: 10px 16px; width: 100%; height: 100%; font-size: 11px; box-sizing: border-box;}
+    .password {width: 170px; height: 34px; margin: 13px 0 0 58px;}
+    .id_search_box { width: 56px; height: 20px; margin: 13px 0 0 58px; line-height: 18px; font-size: 11px;}
+    .pass_search_box { width: 97px; height: 20px; margin: 13px 4.5px 0 3px; line-height: 18px; font-size: 11px;}
+    .signup_box_s {width: 56px; height: 20px; margin-top: 13px; line-height: 18px; font-size: 11px;}
+    .login_box { float: right; width: 44px; height: 81px; top: 286px; right: 34px; line-height: 80px; font-size: 11px; }
+    .login_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .signup_logo {background: url(../img/pan_sp.png)-71px 0; width: 200px; height: 29px; background-size: 600px auto; margin-top: 70px; }
+    .info_sec {width: 200px; height: 109px; margin-top: 22px;}
+    .info_sec li { height: 36px;}
+    .info_sec input { width: 100%; height: 100%; padding: 13px 12px; font-size: 10px; box-sizing: border-box;}
+    .personal_data {width: 200px; height: 120px; margin-top: 11px; }
+    .name_sec {width: 100%; height: 22px;}
+    .name_sec input {width: 100%; height: 100%; padding: 0 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .gender{height: 28px; width: 100%;}
+    .male { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .female { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .birth {height: 22px; width: 100%; }
+    .birth_box {width: 26px; line-height: 22px; font-size: 10px;}
+    .date {width:58px; height: 22px;}
+    .date:last-child {width: 57px;}
+    .date input { width: 57px;  height: 22px; padding: 0px 6px; line-height: 22px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .cont_bar {width: 1px; height: 7px; margin-top: 7px;}
+    .email {height: 22px; }
+    .email input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .contact {height:  22px;}
+    .contact input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .signup_box {width: 200px; height: 19px; line-height: 19px; margin-top: 23px; font-size: 12px;}
+    .exit { width: 30px; height: 30px; background-size: 30px 30px;}
+    .search input { width: 100%; height: 100%; padding: 11px 12px; font-size: 11px;}
+    .name_s {width: 219px; height: 33px; margin-top: 180px; }
+    .email_s {width: 161px; height: 33px; margin: 13px 3px 0 50px; }
+    .mail_box {width: 47px; height: 33px; margin-top: 13px; line-height: 32px; font-size: 11px;}
+    .s_box {width: 220px; height: 34px; margin-top: 78px; }
+    .s_id {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .s_pass {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .search_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .search_area .stemp_logo {top: 80px;}
+    .search_area .login_logo {top: 150px;}
+    .head_area {display: block}
+    .hellow_text{font-size: 20px; margin-top: 26px;}
+    .hellow_box{font-size: 10px; min-width: 0; line-height: 30px; }
+    .hellow_container{padding-top: 50px; height: 450px; min-width: 380px;}
+    .hellow_box em{float:left;}
+    .m_loginsec p{color:white;}
+}

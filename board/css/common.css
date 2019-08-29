@@ -1,0 +1,484 @@
+@charset "UTF-8";
+@font-face { font-family: 'Daum'; src:url('http://ljw1737.dothome.co.kr/m/po/font/Daum_Regular.ttf')  format("truetype"),
+    url('http://ljw1737.dothome.co.kr/m/po/font/Daum_Regular.woff') format("woff"),
+    url('http://ljw1737.dothome.co.kr/m/po/font/Daum_Regular.eot') format("eot")
+}
+@font-face { font-family: 'helveticabold'; src:url('http://ljw1737.dothome.co.kr/m/po/font/Helvetica Narrow Bold.ttf') format("truetype"),
+    url('http://ljw1737.dothome.co.kr/m/po/font/Helvetica Narrow Bold.woff') format("woff"),
+    url('http://ljw1737.dothome.co.kr/m/po/font/Helvetica Narrow Bold.eot') format("eot");
+}
+@font-face { font-family: "Helvetica";
+    src: url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.eot");
+    src: url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/46e2c017dc6de253aa3419292f48cd1e.svg#Helvetica-Narrow") format("svg");
+}
+/* 초기화 */
+html,body{margin: 0; padding: 0;}
+ul,li {list-style: none;}
+img {border: 0px;}
+a {text-decoration: none;}
+em,i,p {font-style: normal;}
+strong,b {font-weight: 600;}
+em,i,p,strong,b {color: white; margin: 0; padding: 0; display: inline-block; font-family: 'daum','helvetica'}
+ol,ul,li,dl,dd {list-style: none; margin: 0; padding: 0;}
+span {position: absolute; top: -9999px;}
+h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
+img{display: block;}
+input {border: 0;}
+#wrap {overflow: hidden;}
+
+/* header start */
+#header {width: 100%; height: 115px; position: relative; min-width: 980px; z-index: 10; }
+#header > img {display: none;}
+.head_top {height: 0; position: relative; background-color: #262626; overflow: hidden;}
+.gnb_sec {margin: 0 auto; width: 60.8%; height: 43px; line-height: 43px; font-size: 18px; text-align: center; color: white;}
+.gnb_area {width: 25%; float: right;} 
+.gnb_area li {width: 50%; height: 43px; float: left; white-space: nowrap;}
+.gnb_area li p {cursor: pointer}
+.gnb_area li p:hover {color: #999;}
+.head_bt {height: 72px; position: fixed; top: 0; width: 100%; z-index: 10; background: #262626; min-width: 980px;}
+.menu_sec {height: 72px; position: relative; width: 100%;}
+.logo_area {width: 19.6%; height: 72px; float: left; min-width: 190px; display: inline-block;}
+.logo {background: url("../../img/pan_sp.png") 0 0; width: 190px; height: 27px; position: relative; margin: 0 auto; margin-top: 22px; overflow: hidden; cursor: pointer}
+.mo_head_cont {width: 100%; position: absolute; top: 0; display: none;}
+.gnb_more {width: 8.3%; position: absolute; right: 5%; top: 27.7%; display: none; cursor: pointer;}
+.mo_logo_area {width: 54%; position: relative; margin: 0 auto; display: none; cursor: pointer}
+.menu {position: relative; margin: 0 auto; text-align: center; width: 60.8%; white-space: nowrap;}
+.menu ul {width: 100%; height: 72px; color: #fff; white-space: nowrap; line-height: 72px;}
+.menu li {width: 25%; height: 72px; float: left; font-size: 18px;}
+.menu li p {margin: 0 auto; cursor: pointer;}
+.menu li p:hover {color: #ccc;}
+.menu_bar1 {height: 1px; width: 100%; background: #000000; position: absolute; bottom: 1px;}
+.menu_bar2 {height: 1px; width: 100%; background: #515151; position: absolute; bottom: 0;}
+.sub_menu { width: 100%; height: 270px; position: absolute; top: 72px; background: #262626; opacity: 0.8; overflow: hidden; z-index: 5; min-width: 980px;}
+.sub_area { margin: 0 auto; width: 60.8%; position: relative; height: 270px; white-space: nowrap; }
+.sub_area ul {width: 25%; height: 270px; float: left; overflow: hidden; font-size: 14px; color: white; text-align: center;}
+.sub_area li {width: 100%; height: 25%; line-height: 67.5px;}
+.sub_area li p {margin: 0 auto; cursor: pointer;}
+.sub_area li p:hover {color: #999;}
+.head_area {width: 100%; position: relative;}
+
+/* login sing up*/
+#gnb_cover { width: 100%; height: 100%; top:0; z-index: 15; position: fixed; background: #262626; display: none;}
+.login_cont p{color: #bcb493;}
+.login_cont { width: 654px; height: 816px; position: fixed; top: 40px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none;}
+.signup_cont { width: 654px; height: 816px; position: fixed; top: 40px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none;}
+.stemp_logo {background: url(../../img/logo2.png); width: 580px; height: 584px; position: absolute; top: 88px; margin: 0 37px;}
+.login_logo {background: url(../../img/pan_sp.png)-176px 0; width: 500px; height: 71px; background-size: 1500px auto; position: absolute; top: 226px; margin: 0 77px; }
+.id { width: 340px; height: 68px; position: relative;  background: #fff; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 370px 0 0 116px; }
+.login_input {padding: 20px 32px; width: 274px; height: 26px; overflow: hidden; font-size: 17px; color: #bcb493; font-family: 'daum','helvetica'}
+.password {width: 340px; height: 68px; position: relative;  background: #fff; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 26px 0 0 116px;}
+.id_search_box { width: 112px; height: 40px; position: relative; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 26px 0 0 116px; display: inline-block; line-height: 36px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.id_search_box:hover p {color: #ac9843}
+.pass_search_box { width: 194px; height: 40px; position: relative; border: 1px solid #e4e4e4; box-sizing: border-box; margin: 26px 9px 0 6px; display: inline-block; line-height: 36px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.pass_search_box:hover p {color: #ac9843}
+.signup_box_s {width: 112px; height: 40px; position: relative; border: 1px solid #e4e4e4; box-sizing: border-box; margin-top: 26px; display: inline-block; line-height: 36px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.signup_box_s:hover p {color: #ac9843}
+.login_box { float: right; width: 89px; height: 162px; position: absolute; top: 370px; right: 94px; border: 1px solid #e4e4e4; box-sizing: border-box; line-height: 160px; font-size: 17px; text-align: center; background: #fff; cursor: pointer;}
+.login_box:hover p {color: #ac9843}
+.exit {background: url(../../img/multiplication_x_u2715_icon_80x80.png);width: 40px; height: 40px; background-size: 40px auto; position: absolute; top: 20px; right: 20px; cursor: pointer;}
+.signup_cont {width: 654px; height: 816px; position: fixed; top: 50px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none;}
+.signup_logo {background: url(../../img/pan_sp.png)-141px 0; width: 400px; height: 57px; background-size: 1200px auto; position: relative; margin: 0 auto; margin-top: 80px; }
+.info_sec {width: 400px; height: 218px; position: relative; margin: 0 auto; margin-top: 44px; border: 1px solid #e4e4e4; background: #fff;}
+.info_sec li {width: 100%; height: 72px; border-bottom: 1px solid #cec9b0}
+.info_Sec li:last-child {border-bottom: 0;}
+.info_sec input {height: 20px; width: 352px; line-height: 20px; padding: 26px 24px; font-size: 12px; color: #bcb493;}
+.personal_data {width: 400px; height: 211px; position: relative; margin: 0 auto; margin-top: 22px; border: 1px solid #e4e4e4; background: #fff;}
+.name_sec {width: 100%; height: 42px; border-bottom: 1px solid #cec9b0; position: relative;}
+.name_sec input {height: 20px; width: 352px; line-height: 20px; padding: 11px 24px; font-size: 12px; color: #bcb493;}
+.gender{height: 47px; width: 100%; border-bottom: 1px solid #cec9b0; position: relative; text-align: center;}
+.male { width: 176px; height: 30px; border: 1px solid #cec9b0; position: relative; display: inline-block; line-height: 30px; text-align: center; top: 7px; font-size: 12px; color: #bcb493; cursor: pointer;}
+.female { width: 176px; height: 30px; border: 1px solid #cec9b0; position: relative; display: inline-block; line-height: 30px; text-align: center; top: 7px; font-size: 12px; color: #bcb493; cursor: pointer;}
+.birth {height: 43px; width: 100%; border-bottom: 1px solid #cec9b0; position: relative; }
+.birth_box {width: 32px; line-height: 43px; height: 100%; border-right: 1px solid #cec9b0; float: left; overflow: hidden; text-align: center; font-size: 11px; color: #bcb493;}
+.date {width: 123px; height: 100%; float: left; position: relative;}
+.date:last-child {width: 121px;}
+.date input { width: 73px;  height: 20px; padding:11.5px 24px; font-size: 12px;}
+.cont_bar {width: 2px; height: 13px; background: #cec9b0; margin-top: 15px; float: right;}
+.email {height: 38px; width: 100%; border-bottom: 1px solid #cec9b0; position: relative; }
+.email input { height: 20px; width: 352px; line-height: 20px; padding: 9px 24px; font-size: 12px; color: #bcb493;}
+.contact {height: 39px; width: 100%; position: relative;}
+.contact input { height: 20px; width: 352px; line-height: 20px; padding: 9px 24px; font-size: 12px; color: #bcb493;}
+.signup_box {width: 400px; height: 38px; background: #fff; color: #bcb493; line-height: 38px; border: 1px solid #cec9b0; text-align: center; margin: 0 auto; margin-top: 46px; font-size: 13px; cursor: pointer;}
+.text-placeholder { color: #bcb493;}
+::-webkit-input-placeholder { color: #bcb493;}
+textarea:-moz-placeholder, input:-moz-placeholder { color: #bcb493;}
+
+/* search */
+.search{ width: 654px; height: 816px; position: fixed; top: 40px; background: #262626; left: 50%; margin-left: -327px; z-index: 20; display: none; }
+.search p {color: #bcb493;}
+.search input { width: 100%; height: 100%; padding: 23px 24px; box-sizing: border-box; font-size: 17px; color: #bcb493;}
+.name_s {width: 438px; height: 66px; margin: 0 auto; margin-top: 360px; position: relative; background: #fff; border: 1px solid #e4e4e4; }
+.email_s {width: 328px; height: 66px; margin: 26px 5px 0 108px; position: relative; background: #fff; border: 1px solid #e4e4e4; display: inline-block;}
+.mail_box {width: 95px; height: 66px; margin-top: 26px; position: relative; background: #fff; border: 1px solid #e4e4e4; display: inline-block; text-align: center; line-height: 64px; font-size: 17px; cursor: pointer;}
+.s_box {width: 440px; height: 68px; margin: 0 auto; margin-top: 156px; position: relative; background: #fff; border: 1px solid #e4e4e4; box-sizing: border-box;}
+.s_id {width: 50%; height: 100%; float: left; line-height: 66px; border-right: 1px solid #e4e4e4; box-sizing: border-box ; text-align: center; cursor: pointer; font-size: 17px;}
+.s_id:hover p, .s_pass:hover p, .mail_box:hover p {color: #ac9843}
+.s_pass {width: 50%; height: 100%; float: right; line-height: 66px; border-left: 1px solid #e4e4e4; box-sizing: border-box; text-align: center; cursor: pointer; font-size: 17px;}
+
+/* mobile menu */
+.m_menu { width: 80%; height: 0; position: fixed; background: #262626; border: 1px solid #fff; right: 0; top: 0; display: none; z-index: 30; min-width: 250px;}
+.m_menu li { width: 100%; position: relative; text-align: center;  font-size: 18px;}
+.m_login { width: 50%; height: 100%; border-right: 1px solid #fff; float: left; box-sizing: border-box; cursor: pointer;}
+.m_signup { width: 50%; height: 100%; float: right; border-left: 1px solid #fff; box-sizing: border-box; cursor: pointer;}
+.m_logosec {height: 83px; border-bottom: 2px solid #fff; cursor: pointer;}
+.menu_logo {background: url(../../img/pan_sp.png)-61px 0; width: 174px; height: 40px; position: relative; margin: 0 auto; top: 21.5px; background-size: 522px 474px;}
+.menu_more {width: 40px; height: 35px; position: absolute; top: 22px; right: 20px;}
+.m_loginsec {height: 35px; line-height: 35px; cursor: pointer; border-bottom: 2px solid #fff;}
+.m_subsec {width: 100%; line-height: 43px; position: relative; cursor: pointer;}
+.m_subsec ul li {position: relative; height: 43px; background: #fff; width: 100%; border-bottom: 1px solid #262626; font-size: 14px; overflow: hidden;}
+.m_subsec ul {display: none;}
+.m_sub_b {height: 43px; background: #262626; border-bottom: 2px solid #fff; position: relative;}
+.m_sub_b p {color: #fff; font-size: 18px;}
+.m_sub_w { height: 43px; background: #f6f5ef; border-bottom: 2px solid #262626; position: relative;}
+.m_subsec ul li p {color: #262626; font-size: 14px;}
+.m_subsec ul li:hover { background: #262626;}
+.m_subsec ul li:hover p {color: #fff;}
+.m_subsec ul li:last-child {border-bottom: 0;}
+.down_arrow { background: url(../../img/pan_sp.png); background-position: 0 -60px; width: 23px; height: 15px; position: absolute; top: 14px; right: 10px; background-size: 960px auto;}
+.arrow_black { background: url(../../img/pan_sp.png); background-position: 0 -80px; width: 23px; height: 15px; position: absolute; top: 14px; right: 10px; background-size: 960px auto;}
+
+
+/* header end, container start */
+
+#container { height: 1728px; position: relative;}
+.head_area{display: none;}
+.banner {width: 1920px; height: 400px; position: relative; margin-top: -126px; left: 50%; margin-left: -960px;}
+.banner img:first-child {position: absolute; top: -280px; z-index: -1;}
+
+.cover {position: absolute; width: 100%; height: 400px; top:0; min-width: 1630px;}
+.l_cover {position: relative; float: left; height: 100%; width: 19.6%; min-width: 330px;}
+.c_cover {position: relative; float: left; width: 60.8%; height: 100%; min-width: 1200px;}
+.center {width: 1092px; position: relative; margin: 0 auto; height: 100%;}
+.center p {font-size: 60px; display: inline; margin-bottom: 44px; bottom: 0; position: absolute; left: 0;}
+.home_img {background: url(../../img/pan_sp.png)-718px -170px; width: 24px; height: 23px; float: left; background-size: 960px auto;}
+.right_arrow {background: url(../../img/pan_sp.png)-308px -270px no-repeat; width: 7px; height: 23px; margin: 0 20px; float: left; background-size: 960px auto;}
+.gnb_menu { margin-bottom: 50px; position: absolute; bottom: 0; width: 460px; right: 4%; height: 25px;}
+.gnb_menu p {font-size: 24px; color: #fff; float: left;}
+
+.lnb { width: 19.6%; min-width: 330px; height: 1328px; float: left; overflow: hidden; background: #fff; z-index: 3; box-sizing: border-box;}
+.lnb_area { width: 286px; height: 303px; margin: 0 auto; margin-top: 78px;}
+.lnb_text {width: 253px; height: 31px; line-height: 1; border-bottom: 1px solid #000; text-align: center; margin-bottom: 31px; }
+.lnb_text p {font-size: 24px; color: #000; letter-spacing: 2px;}
+.w_menu { background: url(../../img/pan_sp.png)-757px -144px; width: 286px; height: 60px; position: relative;}
+.w_menu p {line-height: 60px; width: 260px; height: 60px; position: relative; float: left; font-size: 18px; color: #262626; text-align: center; cursor: pointer;}
+.b_menu {  background: url(../../img/pan_sp.png)-1056px -144px; width: 286px; height: 60px; position: relative;}
+.b_menu p {line-height: 60px; width: 260px; height: 60px; position: relative; float: left; font-size: 18px; color: #fff;text-align: center; cursor: pointer;}
+.main { width: 100%; min-width: 1630px; height: 1328px; position: relative; background: #fff; overflow: hidden;}
+.notice {width:60.8%; min-width: 1200px; border: 1px solid #ebeae6; border-top: 0; height: 1296px; box-sizing: border-box; float: left; text-align: center;}
+.main_img { position: relative; margin: 30px auto 53px; width: 1092px; height: 244px;}
+.notice dl{ position: relative; width: 1092px; height: 777px; margin: 0 auto 36px; border-top: 3px solid #262626; }
+.notice dl dt { position: relative; width: 100%; height: 44px; border-bottom: 1px solid #262626; font-weight: bold; line-height: 44px;}
+.notice dl p { display: inline-block; font-size: 16px; color: #262626; float: left;}
+.notice dl p:nth-child(1) { width: 75px; text-align: center; }
+.notice dl p:nth-child(2) { width: 150px; text-align: center;}
+.notice dl p:nth-child(3) { width: 450px; padding: 0 38px; box-sizing: border-box;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left;}
+.notice dl p:nth-child(4) { width: 150px; text-align: center; }
+.notice dl p:nth-child(5) { position: absolute; left: 118px; display: none;}
+.notice li p:nth-child(3) { cursor: pointer;}
+.notice dl dt p {font-size: 20px; }
+.notice dd { width: 100%; height: 732px}
+.notice ol { width: 100%; height: 100%;}
+.notice ol li {position: relative; width: 100%; height: 61px; line-height: 60px; background: url(../../img/dotted.jpg)repeat-x bottom; }
+.notice ol li:last-child {background: none; border-bottom: 1px solid #000; box-sizing: border-box;}
+.btn {width: 1092px; height: 186px; margin: 0 auto; text-align: center; position: relative;}
+.page {width: 381px; height: 24px; margin: 0 auto; position: relative; display: inline-block; top: -9px;}
+.page p {color: #262626; display: inline; font-size: 24px;  margin-right: 31px; cursor: pointer; font-family: 'helvetica'}
+.page_next {background: url('../../img/pan_sp.png')-676px -72px; width: 34px; height: 34px; background-size: 960px auto; display: inline-block; cursor: pointer;}
+.btn_search {width: 509px; height: 42px; margin: 0 auto; margin-top: 40px; position: relative;}
+select { width: 100px; height: 42px; border: 3px solid #ccc; display: inline-block; float: left; box-sizing: border-box; font-size: 16px;}
+.btn input {border: 3px solid #bfbfbf; border-left: 0; width: 345px; height: 42px; padding: 5px 15px; float: left;  box-sizing: border-box; background: #e5e5e5}
+.search_box {background: #262626; width: 63px; height: 42px; float: left; text-align: center; border-radius: 7px; cursor: pointer;}
+.search_box p {color: #fff; font-size: 20px; line-height: 42px; display: block;}
+.icon {background: url(../../img/pan_sp.png)-2px -235px no-repeat; width: 261px; height: 225px; float: left; margin-left: 40px; position: relative; top: 890px; white-space: nowrap;}
+.m_subsec p {width: 100%; height: 100%;}
+
+/* container end, footer start */
+#footer{height: 225px; position: relative; background: #262626;}
+.foot_area { margin: 0 auto; height: 100%; width: 1130px; position: relative;}
+.foot_text { width: 785px; height: 72px; position: relative; padding: 82px 6.3% 0 0; float: left;}
+.foot_tel { width: 273px; height: 48px; position: relative; margin-top: 102px; float: right;}
+.foot_text strong {font-size:32px; color: white; font-family: 'helveticabold'; }
+.foot_text p {font-size: 27px; font-family: 'Daum';}
+.foot_text em {font-size: 27px; font-family: 'helvetica'; }
+.foot_text b {font-size: 27px; display: inline-block;}
+.foot_tel strong {font-size: 36px; font-family: 'helvetica'; white-space: nowrap;}
+
+@media (min-width: 680px) and (max-width: 980px){
+    #header{ min-width: 680px;}
+    .logo_area{display: none;}
+    .head_bt {min-width: 680px;}
+    .gnb_area {width: 27%;}
+    .menu { width: 80%;}
+    .gnb_sec {width: 85%;}
+    .sub_menu {min-width: 680px;}
+    .sub_area {width: 80%;}
+    #footer {height: 157px;}
+    .foot_text strong {font-size: 22px;}
+    .foot_text p {font-size: 18px;}
+    .foot_text em {font-size: 18px;}
+    .foot_text b {font-size: 18px;}
+    .foot_tel strong {font-size: 25px;}
+    .foot_text {width: 530px; padding: 57px 6.3% 0 0;}
+    .foot_tel {width: 148px; margin-top: 70px}
+    .foot_area {width: 760px; height: 157px;}
+    #container {height: 1450px;}
+    .main , .lnb {height: 1050px;}
+    .cover { min-width: 1050px;}
+    .l_cover {width: 14.7%; min-width: 247px;}
+    .c_cover {width: 56.8%; min-width: 600px;}
+    .center {width: 546px; position: relative; margin: 0 auto; height: 100%;}
+    .center p {font-size: 40px; margin-bottom: 44px;}
+    .home_img {background: url(../../img/pan_sp.png)-538px -127px; width: 18px; height: 18px; float: left; background-size: 720px auto;}
+    .right_arrow {background: url(../../img/pan_sp.png)-231px -202px no-repeat; width: 5px; height: 18px; margin: 0 15px; float: left; background-size: 720px auto;}
+    .gnb_menu { width: 345px; right: 4%; height: 25px;}
+    .gnb_menu p {font-size: 18px; color: #fff; float: left;}
+
+    .lnb { width: 14.7%; min-width: 247px;}
+    .lnb_area { width: 241px; height: 227px;}
+    .lnb_text {width: 189px; height: 24px; }
+    .lnb_text p {font-size: 19px; letter-spacing: 1.5px;}
+    .w_menu { background: url(../../img/pan_sp.png)-567px -108px; width: 201px; height: 45px; position: relative; background-size: 1440px auto;}
+    .w_menu p {line-height: 45px; width: 195px; height: 45px; font-size: 14px;}
+    .b_menu {  background: url(../../img/pan_sp.png)-792px -108px; width: 215px; height: 45px; background-size: 1440px auto;}
+    .b_menu p {line-height: 45px; width: 195px; height: 45px; font-size: 14px;}
+    .main {min-width: 860px;}
+    .notice {width:60.8%; min-width: 600px; height: 1000px}
+    .main_img { width: 546px; height: 122px;}
+    .notice dl{ width: 546px; height: 583px; }
+    .notice dl dt { height: 33px; line-height: 33px;}
+    .notice dl p {font-size: 13px;}
+    .notice dd {height: 552px;}
+    .notice ol li {height: 46px; line-height: 45px;}
+    .notice dl p:nth-child(1) { width: 60px; height: 45px}
+    .notice dl p:nth-child(2) { width: 75px; height: 45px;}
+    .notice dl p:nth-child(3) { width: 300px; padding: 0 25px; height: 45px;}
+    .notice dl p:nth-child(4) { width: 80px; text-align: center; height: 45px;}
+    .notice dl p:nth-child(5) { left: 59px; height: 45px}
+    .notice dl dt p {font-size: 15px; }
+    .btn {width: 546px; }
+    .page {width: 286px; height: 18px; top: -9px;}
+    .page p { font-size: 18px;  margin-right: 24px; cursor: pointer; font-family: 'helvetica'}
+    .page_next {background: url('../../img/pan_sp.png')-507px -54px; width: 26px; height: 26px; background-size: 720px auto;}
+    .btn_search {width: 433px; height: 32px; margin-top: 30px; }
+    select { width: 100px; height: 32px; border: 2px solid #ccc; font-size: 12px;}
+    .btn input {border: 2px solid #bfbfbf; width: 285px; height: 32px; padding: 4px 13px;}
+    .search_box { width: 48px; height: 32px; line-height: 32px; border-radius: 5px;}
+    .search_box p { font-size: 15px;}
+}
+
+
+@media (min-width: 420px) and (max-width: 680px){
+    #wrap {min-width: 320px; overflow: hidden;}
+    #header {width: 100%; position: fixed; text-align: center; z-index: 5; min-width: 320px; height: auto}
+    #header > img {display: block;}
+    .gnb_more {display: block;}
+    .mo_head_cont {display: block;}
+    .head_top { display: none;}
+    .head_bt {display: none;}
+    .head_area {display: block;}
+    .mo_logo_area{display: block;}
+    #footer {height: 56px;}
+    .foot_text strong {font-size: 12px;}
+    .foot_text p {font-size: 10px;}
+    .foot_text em {font-size: 10px;}
+    .foot_text b {font-size: 10px;}
+    .foot_tel strong {font-size: 14px;}
+    .foot_text {width: 295px; height: 34px; padding: 10px 6.3% 0 0;}
+    .foot_tel {width: 90px; height: 20px; margin-top: 20px}
+    .foot_area {width: 415px; height: 56px;}
+    #gnb_cover {background: #fff;}
+    .login_cont, .signup_cont, .search {width: 100%; height: 100%; position: fixed; top: 0; left: 0; margin-left: 0;}
+    .stemp_logo { width: 290px; height: 292px; position: absolute; top: 144px; margin: 0 18px; background-size: 290px auto;}
+    .login_logo {background: url(../../img/pan_sp.png)-88px 0; position: relative; width: 250px; height: 36px; background-size: 750px auto; margin: 0 auto; margin-top: 0;}
+    .id { width: 170px; height: 34px; margin: 250px 0 0 58px; }
+    .login_input {padding: 10px 16px; width: 100%; height: 100%; font-size: 11px; box-sizing: border-box;}
+    .password {width: 170px; height: 34px; margin: 13px 0 0 58px;}
+    .id_search_box { width: 56px; height: 20px; margin: 13px 0 0 58px; line-height: 18px; font-size: 11px;}
+    .pass_search_box { width: 97px; height: 20px; margin: 13px 4.5px 0 3px; line-height: 18px; font-size: 11px;}
+    .signup_box_s {width: 56px; height: 20px; margin-top: 13px; line-height: 18px; font-size: 11px;}
+    .login_box { float: right; width: 44px; height: 81px; top: 286px; right: 34px; line-height: 80px; font-size: 11px; }
+    .login_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .signup_logo {background: url(../../img/pan_sp.png)-71px 0; width: 200px; height: 29px; background-size: 600px auto; margin-top: 70px; }
+    .info_sec {width: 200px; height: 109px; margin-top: 22px;}
+    .info_sec li { height: 36px;}
+    .info_sec input { width: 100%; height: 100%; padding: 13px 12px; font-size: 10px; box-sizing: border-box;}
+    .personal_data {width: 200px; height: 120px; margin-top: 11px; }
+    .name_sec {width: 100%; height: 22px;}
+    .name_sec input {width: 100%; height: 100%; padding: 0 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .gender{height: 28px; width: 100%;}
+    .male { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .female { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .birth {height: 22px; width: 100%; }
+    .birth_box {width: 26px; line-height: 22px; font-size: 10px;}
+    .date {width:58px; height: 22px;}
+    .date:last-child {width: 57px;}
+    .date input { width: 57px;  height: 22px; padding: 0px 6px; line-height: 22px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .cont_bar {width: 1px; height: 7px; margin-top: 7px;}
+    .email {height: 22px; }
+    .email input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .contact {height:  22px;}
+    .contact input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .signup_box {width: 200px; height: 19px; line-height: 19px; margin-top: 23px; font-size: 12px;}
+    .exit { width: 30px; height: 30px; background-size: 30px 30px;}
+    .search input { width: 100%; height: 100%; padding: 11px 12px; font-size: 11px;}
+    .name_s {width: 219px; height: 33px; margin-top: 180px; }
+    .email_s {width: 161px; height: 33px; margin: 13px 3px 0 50px; }
+    .mail_box {width: 47px; height: 33px; margin-top: 13px; line-height: 32px; font-size: 11px;}
+    .s_box {width: 220px; height: 34px; margin-top: 78px; }
+    .s_id {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .s_pass {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .search_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .search_area .stemp_logo {top: 80px;}
+    .search_area .login_logo {top: 150px;}
+    .main {min-width: 320px; height: 706px;}
+    #container {height: 706px;}
+    .banner { display: none;}
+    .lnb { width: 100%; height: 30px;}
+    .lnb_area { width: 100%; height: 30px; margin: 0;}
+    .lnb_text {display: none;}
+    .b_menu {width: 33.3%; border-left: 2px solid #d4ccc2; box-sizing: border-box; background: none; height: 30px; float: left; cursor: pointer;}
+    .w_menu { width: 33.3%; border-left: 2px solid #d4ccc2; box-sizing: border-box; background: none; height: 30px; float: left; cursor: pointer; background-color: #f6f5ef}
+    .w_menu:nth-child(2) { width: 33.3%; border-left: 0;}
+    .w_menu p, .b_menu p {font-size: 14px; color: #262626; width: 100%; height: 100%; line-height: 30px;}
+    .notice { width: 100%; height: 424px; min-width: 320px; border-bottom: 2px solid #c1b99a;}
+    .main_img {display: none;}
+    .notice dl { width: 100%; height: 424px; border-top: 0; }
+    .notice dl p:nth-child(3) {width: 75%;}
+    .notice dl dt { width: 100%; height: 26px; background: #c1b99a; border-bottom: 0;}
+    .notice dl dt p {font-size: 12px; height: 26px; line-height: 26px;}
+    .notice dl dt p:first-child , .notice ol li p:first-child , .notice dl dt p:nth-child(2) { display: none;}
+    .notice dl dt p:nth-child(2) {width: 75%; border-right: 2px solid #bcb493; box-sizing: border-box; text-align: center;}
+    .notice dl dt p:nth-child(3) {text-align: center;}
+    .notice dl p:nth-child(4) {width: 25%;}
+    .notice dl dd {height: 396px;}
+    .notice dl dt p:last-child(3) {width: 25%;}
+    .notice ol { height: 396px;}
+    .notice ol li { height: 44px; border-bottom: 2px solid #f9f8f4; border-right: 2px solid #f9f8f4; box-sizing: border-box; background: none;}
+    .notice ol li p {font-size: 11px; line-height: 32px; height: 32px; }
+    .notice ol li p:nth-child(2) {width: 20%; height: 25px; text-align: left; position: absolute; left: 32px; bottom: 0; font-size: 11px;}
+    .notice ol li p:nth-child(3) {line-height: 23px; padding: 0 32px}
+    .notice ol li p:nth-child(4) {width: 25%;}
+    .notice ol li:nth-child(n+10) {display: none;}
+    .btn {min-width: 320px; width: 100%; height: 65px;}
+    .page {width: 190px; height: 20px; top: -9px;}
+    .page p {font-size: 12px;  margin-right: 15px; cursor: pointer; font-family: 'helvetica'}
+    .page_next {display: none;}
+    .btn_search {width: 219px; height: 23px; margin-top: 20px; border: 1px solid #dedac9; box-sizing: border-box; border-radius: 3px;}
+    select { width: 66px; height: 21px; border: 0; border-right: 1px solid #dedac9; font-size: 10px; text-align: center; appearance: none;}
+    .btn input {border: 0; width: 122px; height: 21px; padding: 0 10px; line-height: 21px; background: #fff; color: #625646}
+    .search_box {background: #262626; width: 28px; height: 21px; border-left: 1px solid #dedac9; border-radius: 3px; background: #f6f5ef }
+    .search_box p {color: #625646; font-size: 10px; line-height: 23px; }
+    .cover {display: none;}
+}
+@media (min-width: 0) and (max-width: 420px){
+    #wrap {min-width: 320px; overflow: hidden;}
+    #header {width: 100%; position: fixed; text-align: center; z-index: 5; min-width: 320px; height: auto}
+    #header > img {display: block;}
+    .gnb_more {display: block;}
+    .mo_head_cont {display: block;}
+    .head_top { display: none;}
+    .head_bt {display: none;}
+    .head_area {display: block;}
+    .mo_logo_area{display: block;}
+    .foot_text strong {font-size: 12px;}
+    .foot_text p {font-size: 10px;}
+    .foot_text em {font-size: 10px;}
+    .foot_text b {font-size: 10px;}
+    .foot_tel strong {font-size: 14px;}
+    .foot_text {width: 295px; height: 34px; padding: 7px 6.3% 0 0;}
+    #footer { height: 95px; }
+    .foot_area { width: 300px; height: 70px;}
+    .foot_tel {position: absolute; left: 0; top: 50px;width: 90px; height: 20px; margin-top: 0;}
+    #gnb_cover {background: #fff;}
+    .m_menu li {font-size: 16px;}
+    .m_sub_h p { font-size: 16px;}
+    .m_sub_b p { font-size: 13px;}
+    .menu_more {width: 30px; height: 26px; top: 28px;}
+    .menu_logo {height: 30px; top: 29px; left: -24px; background-size: 522px 355px;}
+    .login_cont, .signup_cont, .search {width: 100%; height: 100%; position: fixed; top: 0; left: 0; margin-left: 0; min-width: 320px}
+    .stemp_logo { width: 290px; height: 292px; position: absolute; top: 144px; margin: 0 18px; background-size: 290px auto;}
+    .login_logo {background: url(../../img/pan_sp.png)-88px 0; position: relative; width: 250px; height: 36px; background-size: 750px auto; margin: 0 auto; margin-top: 0;}
+    .id { width: 170px; height: 34px; margin: 250px 0 0 58px; }
+    .login_input {padding: 10px 16px; width: 100%; height: 100%; font-size: 11px; box-sizing: border-box;}
+    .password {width: 170px; height: 34px; margin: 13px 0 0 58px;}
+    .id_search_box { width: 56px; height: 20px; margin: 13px 0 0 58px; line-height: 18px; font-size: 11px;}
+    .pass_search_box { width: 97px; height: 20px; margin: 13px 4.5px 0 3px; line-height: 18px; font-size: 11px;}
+    .signup_box_s {width: 56px; height: 20px; margin-top: 13px; line-height: 18px; font-size: 11px;}
+    .login_box { float: right; width: 44px; height: 81px; top: 286px; right: 34px; line-height: 80px; font-size: 11px; }
+    .login_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .signup_logo {background: url(../../img/pan_sp.png)-71px 0; width: 200px; height: 29px; background-size: 600px auto; margin-top: 70px; }
+    .info_sec {width: 200px; height: 109px; margin-top: 22px;}
+    .info_sec li { height: 36px;}
+    .info_sec input { width: 100%; height: 100%; padding: 13px 12px; font-size: 10px; box-sizing: border-box;}
+    .personal_data {width: 200px; height: 120px; margin-top: 11px; }
+    .name_sec {width: 100%; height: 22px;}
+    .name_sec input {width: 100%; height: 100%; padding: 0 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .gender{height: 28px; width: 100%;}
+    .male { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .female { width: 88px; height: 15px; line-height: 15px; top: 0px; font-size: 10px; }
+    .birth {height: 22px; width: 100%; }
+    .birth_box {width: 26px; line-height: 22px; font-size: 10px;}
+    .date {width:58px; height: 22px;}
+    .date:last-child {width: 57px;}
+    .date input { width: 57px;  height: 22px; padding: 0px 6px; line-height: 22px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .cont_bar {width: 1px; height: 7px; margin-top: 7px;}
+    .email {height: 22px; }
+    .email input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .contact {height:  22px;}
+    .contact input { height: 100%; width: 100%; padding: 0px 12px; font-size: 10px; box-sizing: border-box; position: absolute; top: 0;}
+    .signup_box {width: 200px; height: 19px; line-height: 19px; margin-top: 23px; font-size: 12px;}
+    .exit { width: 30px; height: 30px; background-size: 30px 30px;}
+    .search input { width: 100%; height: 100%; padding: 11px 12px; font-size: 11px;}
+    .name_s {width: 219px; height: 33px; margin-top: 180px; }
+    .email_s {width: 161px; height: 33px; margin: 13px 3px 0 50px; }
+    .mail_box {width: 47px; height: 33px; margin-top: 13px; line-height: 32px; font-size: 11px;}
+    .s_box {width: 220px; height: 34px; margin-top: 78px; }
+    .s_id {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .s_pass {width: 50%; height: 100%; line-height: 33px; font-size: 11px;}
+    .search_area {width: 320px; height: 670px; position: relative; margin: 0 auto; top: 0;}
+    .search_area .stemp_logo {top: 80px;}
+    .search_area .login_logo {top: 150px;}
+    /* 모바일 */
+    .main {min-width: 320px; height: 604px;}
+    #container {height: 664px;}
+    .banner { display: none;}
+    .lnb { width: 100%; height: 30px;}
+    .lnb_area { width: 100%; height: 30px; margin: 0;}
+    .lnb_text {display: none;}
+    .b_menu {width: 33.3%; border-left: 2px solid #d4ccc2; box-sizing: border-box; background: none; height: 30px; float: left; cursor: pointer}
+    .w_menu:nth-child(2) { width: 33.3%; border-left: 0;}
+    .w_menu { width: 33.3%; border-left: 2px solid #d4ccc2; box-sizing: border-box; background: none; height: 30px; float: left; cursor: pointer; background-color: #f6f5ef}
+    .w_menu p, .b_menu p {font-size: 14px; color: #262626; width: 100%; height: 100%; line-height: 30px;}
+    .notice { width: 100%; height: 424px; min-width: 320px; border-bottom: 2px solid #c1b99a;}
+    .main_img {display: none;}
+    .notice dl { width: 100%; height: 424px; border-top: 0; }
+    .notice dl p:nth-child(3) {width: 75%;}
+    .notice dl dt { width: 100%; height: 26px; background: #c1b99a; border-bottom: 0;}
+    .notice dl dt p {font-size: 12px; height: 26px; line-height: 26px;}
+    .notice dl dt p:first-child , .notice ol li p:first-child , .notice dl dt p:nth-child(2) { display: none;}
+    .notice dl dt p:nth-child(2) {width: 75%; border-right: 2px solid #bcb493; box-sizing: border-box; text-align: center;}
+    .notice dl dt p:nth-child(3) {text-align: center;}
+    .notice dl p:nth-child(4){ width: 25%;}
+    .notice dl dd {height: 396px;}
+    .notice dl dt p:last-child(3) {width: 25%;}
+    .notice ol { height: 396px;}
+    .notice ol li { height: 44px; border-bottom: 2px solid #f9f8f4; border-right: 2px solid #f9f8f4; box-sizing: border-box; background: none;}
+    .notice ol li p {font-size: 11px; line-height: 32px; height: 32px; }
+    .notice ol li p:nth-child(2) {width: 20%; height: 25px; text-align: left; position: absolute; left: 32px; bottom: 0; font-size: 11px;}
+    .notice ol li p:nth-child(3) {line-height: 23px; padding: 0 32px}
+    .notice ol li p:nth-child(4) {width: 25%;}
+    .notice ol li:nth-child(n+10) {display: none;}
+    .btn {min-width: 320px; width: 100%; height: 65px;}
+    .page {width: 190px; height: 20px; top: -9px;}
+    .page p {font-size: 12px;  margin-right: 15px; cursor: pointer; font-family: 'helvetica'}
+    .page_next {display: none;}
+    .btn_search {width: 219px; height: 23px; margin-top: 20px; border: 1px solid #dedac9; box-sizing: border-box; border-radius: 3px;}
+    select { width: 66px; height: 21px; border: 0; border-right: 1px solid #dedac9; font-size: 10px; text-align: center; appearance: none;}
+    .btn input {border: 0; width: 122px; height: 21px; padding: 0 10px; line-height: 21px; background: #fff; color: #625646}
+    .search_box {background: #262626; width: 28px; height: 21px; border-left: 1px solid #dedac9; border-radius: 3px; background: #f6f5ef }
+    .search_box p {color: #625646; font-size: 10px; line-height: 23px; }
+    .cover {display: none;}
+}

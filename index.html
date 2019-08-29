@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>PAN DE PAN</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="http://openapi.map.naver.com/openapi/v2/maps.js?clientId=T3AiFSKRBB_iv3MY3aE8"></script>
+
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipnavigation">
+            <a href="javascript: $('#skipnavigation a:eq(0)').click()">메뉴로 가기</a>
+            <a href="javascript: $('#skipnavigation a:eq(1)').click()">메인으로 가기</a>
+        </div>
+        <div id="header">
+            <div class="head_top">
+                <div class="gnb_sec">
+                    <div class="gnb_area">
+                        <ul>
+                            <li><a href="javascript: $('.login').click()"><p class="login">Login</p></a></li>
+                            <li><a href="javascript: $('.signup').click()"><p class="signup">Sign Up</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/header.jpg" alt="header" width="100%">
+            <div class="mo_head_cont">
+                <div class="mo_logo_area">
+                    <a href="./index.html"><h1><img src="./img/mo_logo.png" alt="로고" width="100%"></h1></a>
+                </div>
+                <div class="gnb_more">
+                    <img src="./img/more.png" alt="메뉴 더보기" width="100%">
+                </div>
+            </div>
+            <div class="head_bt">
+                <div class="menu_sec">
+                    <div class="logo_area">
+                        <h1><a href="./index.html"><div class="logo"><span>로고</span></div></a></h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#."><p>PAN DE PAN</p></a></li>
+                            <li><a href="#."><p>PRODUCTS</p></a></li>
+                            <li><a href="#."><p>STORE</p></a></li>
+                            <li><a href="#."><p>CUSTOMER CENTER</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_bar2"></div>
+                <div class="menu_bar1"></div>
+                <div class="sub_menu">
+                    <div class="sub_area">
+                        <ul>
+                            <li><a href="./de/index.html"><p>대표 인사말</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./bread/index.html"><p>팡드팡 Bread</p></a></li>
+                            <li><a href="./cake/index.html"><p>팡드팡 Cake</p></a></li>
+                            <li><a href="./coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                            <li><a href="./header/header.html"><p>가맹점 개설안내</p></a></li>
+                            <li><a href="./chang/chang.html"><p>창업절차</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./notice/index.html"><p>공지사항</p></a></li>
+                            <li><a href="./story/index.html"><p>팡드팡 Story</p></a></li>
+                            <li><a href="./board/index.html"><p>게시판</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cont s -->
+        <div id="container">
+            <div id="gnb_cover"></div>
+            <div class="login_cont">
+                <div class="login_area">
+                    <div class="stemp_logo"><span>도장 로고</span></div>
+                    <div class="login_logo"><span>로고 이미지</span></div>
+                    <div class="id">
+                        <label for="login_input">ID를 입력하세요.</label>
+                            <a href="#."><input class="login_input" type="text" placeholder="ID" title="ID를 입력하세요."></div></a>
+                    <div class="password">
+                        <label for="login_input">Password를 입력하세요.</label>
+                            <a href="#."><input class="login_input" type="password" placeholder="PASSWORD" title="password를 입력하세요"></div></a>
+                    <div class="id_search_box"><a href="javascript: $('.id_search_box, .pass_search_box').click()"><p>ID찾기</p></a></div>
+                    <div class="pass_search_box"><a href="javascript: $('.id_search_box, .pass_search_box').click()"><p>PASSWORD찾기</p></a></div>
+                    <div class="signup_box_s"><a href="javascript: $('.signup').click()"><p>회원가입</p></a></div>
+                    <div class="login_box"><a href="javascript: login()"><p>로그인</p></a></div>
+                </div>
+                <a href="javascript: $('.exit').click()"><div class="exit"><span>나가기</span></div></a>
+            </div>
+            <div class="signup_cont">
+                <div class="signup_logo"><span>로고</span></div>
+                <div class="exit"><span>나가기</span></div>
+                <ul class="info_sec">
+                    <li><label for="info_sec li:first-child input" title="ID를 입력하세요.">ID를 입력하세요.</label><a href="#."><input type="text" placeholder="ID를 입력하세요." title="ID를 입력하세요."></a></li>
+                    <li><label for="info_sec li:nth-child(2) input">비밀번호를 입력하세요.</label><a href="#."><input type="password" placeholder="비밀번호를 입력하세요." title="비밀번호를 입력하세요"></a></li>
+                    <li><label for="info_sec li:last-child">비밀번호 재확인.</label><a href="#."><input type="password" placeholder="비밀번호 재확인." title="비밀번호 재확인"></a></li>
+                </ul>
+                <ul class="personal_data">
+                    <li class="name_sec"><a href="#."><input type="text" placeholder="이름" title="이름을 입력하세요."></a></li>
+                    <li class="gender"><a href="javascript: $('.male').click()"><div class="male">남자<span>남자이면 엔터를 누르세요.</span></div></a><a href="javascript: $('.female').click()"><div class="female">여자<span>여자이면 엔터를 누르세요.</span></div></a></li>
+                    <li class="birth">
+                        <ul>
+                            <li class="birth_box">생일</li>
+                            <li class="date"><label for="date input">태어난 년도를 입력하세요. 년(4자리)</label><a href="#."><input type="text" placeholder="년(4자리)" title="태어난 년도를 입력하세요. 년(4자리)"></a><div class="cont_bar"></div></li>
+                            <li class="date"><label for="date input">태어난 월을 입력하세요.</label><a href="#."><input type="text" placeholder="월" title="태어난 월을 입력하세요."></a><div class="cont_bar"></div></li>
+                            <li class="date"><label for="date input">태어난 일을 입력하세요.</label><a href="#."><input type="text" placeholder="일" title="태어난 일을 입력하세요."></a></li>
+                        </ul>
+                    </li>
+                    <li class="email"><label for="email input">이메일을 입력하세요</label><a href="#."><input type="text" placeholder="이메일" title="이메일을 입력하세요."></a></li>
+                    <li class="contact"><label for="contact input">연락처를 입력하세요.</label><a href="#."><input type="text" placeholder="연락처" title="연락처를 입력하세요."></a></li>
+                </ul>
+                <a href="javascript: signup()"><div class="signup_box">회원가입</div></a>
+            </div>
+            <div class="search">
+                <div class="search_area">
+                    <div class="stemp_logo"></div>
+                    <div class="login_logo"></div>
+                    <div class="name_s"><label for="name_s input">이름을 입력하세요.</label><a href="#."><input type="text" placeholder="이름" title="이름을 입력하세요."></a></div>
+                    <div class="email_s"><label for="email_s input">E-mail을 입력하세요.</label><a href="#."><input type="text" placeholder="E-mail" title="E-mail을 입력하세요."></a></div>
+                    <div class="mail_box"><a href="javascript: $('.mail_box').click()"><p>메일전송</p></a></div>
+                    <div class="s_box">
+                        <div class="s_id"><a href="javascript: $('.s_id').click()"><p>ID찾기</p></a></div><div class="s_pass"><a href="javascript: $('.s_pass').click()"><p>비밀번호 찾기</p></a></div>
+                    </div>
+                </div>
+                <div class="exit"><span>나가기</span></div>
+            </div>
+            <div class="m_menu">
+                <ul>
+                    <li class="m_logosec">
+                        <a href="./index.html"><div class="menu_logo"><span>로고</span></div></a>
+                        <img class="menu_more" src="img/more.png" alt="메뉴 닫기" width="100%">
+                    </li>
+                    <li class="m_loginsec">
+                        <div class="m_login"><p>LOGIN</p></div>
+                        <div class="m_signup"><p>SIGN UP</p></div>
+                    </li>
+                    <ul class="m_subsec">
+                        <li>
+                            <div class="m_sub_b"><p>PAN DE PAN</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./de/index.html"><p>대표 인사말</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>PRODUCT</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./bread/index.html"><p>팡드팡 Bread</p></a></li>
+                                <li><a href="./cake/index.html"><p>팡드팡 Cake</p></a></li>
+                                <li><a href="./coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>STORE</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                                <li><a href="./header/header.html"><p>가맹점 개설안내</p></a></li>
+                                <li><a href="./chang/chang.html"><p>창업절차</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>CUSTOMER CENTER</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./notice/index.html"><p>공지사항</p></a></li>
+                                <li><a href="./story/index.html"><p>팡드팡 Story</p></a></li>
+                                <li><a href="./board/index.html"><p>게시판</p></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="head_area"></div>
+            <div class="mo_back">
+                <img class="back_ani" src="./img/back.jpg" alt="백 그라운드" width="100%">
+                <img class="mo_back_logo" src="./img/logo.png" alt="로고" width="100%">
+            </div>
+            <div class="cont_sec1">
+                <div class="background">
+                    <img src="./img/background1.jpg" alt="백 그라운드" width="100%">
+                </div>
+                <img src="./img/logo.png" alt="로고" width="100%">
+            </div>
+            <div class="cont_sec2">
+                <img src="./img/bl.png" width="100%;" alt="롤링베너 패딩">
+                <div class="top_bar"></div>
+                <div class="top_textsec"><b>TURE BAKER</b></div>
+                <div class="sec2_img">
+                    <img src="./img/2014-03-27-gluten_free_banana_bread_image.jpg" alt="바나나와 빵 이미지" width="100%;">
+                    <img src="./img/Our Daily Bread 05.jpg" alt="모카빵 이미지" width="100%;">
+                    <img src="./img/cervencove_peceni_chleba_v_lenore-980x653.jpg"alt="바게트 이미지"  width="100%;">
+                    <img src="./img/bread-812864_960_720.jpg" alt="여러가지 빵 이미지" width="100%;">
+                    <img src="./img/o-BREAD-facebook.jpg" alt="식빵 지이미지" width="100%;">
+                </div>
+                <img class="blur" src="./img/bl.png" alt="롤링베너 패딩" width="100%;">
+            </div>
+            <div class="cont_sec3">
+                <div class="background2">
+                    <img src="./img/background2.jpg" alt="백 그라운드" width="100%">
+                </div>
+                <img class="mo_back2" src="./img/background2.jpg" alt="백그라운드" width="100%">
+                <img src="./img/logo3.png" width="100%" alt="로고">
+            </div>
+            <div class="mo_fran">
+                <div class="top_bar"></div>
+                <div class="top_textsec"><b>Franchise</b></div>
+                <div class="fran_textsec">
+                    <p>성공 창업을 우선으로 생각하는 신뢰받는 기업<br>최소의 창업 비용으로 최고의 품격<br>경쟁력 있는 저렴한 가격대의 바로 구운 빵 !</p>
+                </div>
+                <div class="fran_morebox"><p>자세히 보기</p></div>
+            </div>
+            <div class="cont_sec4">
+                <div class="top_bar"></div>
+                <div class="top_textsec"><b>DISPLAY TABLE</b></div>
+                <img src="img/sub_m2.jpg" width="100%" alt="백그라운드">
+                <div class="img_area">
+                    <div class="img_area2">
+                        <ul class="page">
+                            <li class="prev"></li>
+                            <li></li>
+                            <li class="next"></li>
+                        </ul>
+                        <ul class="rolling_banner">
+                            <li><img src="./img/sub_bread0.jpg" alt="딸기빵 이미지" width="100%"></li>
+                            <li><img src="./img/sub_bread1.jpg" alt="샌드위치 이미지" width="100%"></li>
+                            <li><img src="./img/sub_bread2.jpg" alt="공갈빵 이미지" width="100%"></li>
+                            <li><img src="./img/sub_bread3.jpg" alt="소라빵 이미지" width="100%"></li>
+                            <li><img src="./img/sub_bread4.jpg" alt="소보로, 크림빵 이미지" width="100%"></li>
+                        </ul>
+                        <div class="img_cont">
+                            <ul>
+                                <li><a href="javascript: img_ex[0].click()"><img class="img_ex0" src="./img/sub_bread0.jpg" alt="딸기빵 이미지" width="100%"></a></li>
+                                <li><a href="javascript: img_ex[1].click()"><img class="img_ex1" src="./img/sub_bread1.jpg" alt="샌드위치 이미지" width="100%"></a></li>
+                                <li><a href="javascript: img_ex[2].click()"><img class="img_ex2" src="./img/sub_bread2.jpg" alt="공갈빵 이미지" width="100%"></a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="javascript: img_ex[3].click()"><img class="img_ex3" src="./img/sub_bread3.jpg" alt="소라빵 이미지" width="100%"></a></li>
+                                <li><a href="javascript: img_ex[4].click()"><img class="img_ex4" src="./img/sub_bread4.jpg" alt="빵소보로, 크림빵 이미지" width="100%"></a></li>
+                                <li><a href="javascript: img_ex[5].click()"><img class="img_ex5" src="./img/sub_bread5.jpg" alt="식빵 이미지" width="100%"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img_exarea"><div class="exarea"><a href="javascript: $('.img_exarea').click()"><img src="" alt="큰 이미지(누르면 닫힙니다.)"></a></div></div>
+                </div>
+            </div>
+            <div class="cont_sec5">
+                <div class="top_bar"></div>
+                <div class="top_textsec"><b>LOCATION</b></div>
+                <img src="img/sub_m2.jpg" width="100%" alt="백그라운드">
+                <div id="map" style="border:1px solid #ddd; position: absolute; top: 0;">
+            </div>
+        </div>
+        <!-- foot s -->
+        <div id="footer">
+            <div class="foot_area">
+                <div class="foot_text"><strong>PAN DE PAN&nbsp;</strong><p>대구시 중구 동덕로 30길 110(삼덕3가 137-4)</p>
+                    <em>COPYRIGHT BY&nbsp;</em><b>PAN DE PAN&nbsp;</b><em>ALL RIGHT RESERVED.</em></div>
+                <div class="foot_tel"><strong>TEL. 1588-4459</strong></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

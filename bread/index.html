@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>PAN DE PAN</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipnavigation">
+            <a href="javascript: $('#skipnavigation a:eq(0)').click()">메뉴로 가기</a>
+            <a href="javascript: $('#skipnavigation a:eq(1)').click()">메인으로 가기</a>
+        </div>
+        <div id="header">
+            <img src="./img/header.jpg" width="100%" alt="검은 박스">
+            <div class="mo_head_cont">
+                <div class="mo_logo_area">
+                    <a href="../index.html"><h1><img src="./img/mo_logo.png" width="100%" alt="로고"></h1></a>
+                </div>
+                <div class="gnb_more">
+                    <img src="./img/more.png" width="100%" alt="메뉴 더보기">
+                </div>
+            </div>
+            <div class="head_top">
+                <div class="gnb_sec">
+                    <div class="gnb_area">
+                        <ul>
+                            <li><p class="login">Login</p></li>
+                            <li><p class="signup">Sign Up</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="head_bt">
+                <div class="menu_sec">
+                    <div class="logo_area">
+                        <h1><a href="../index.html"><div class="logo"></div></a></h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#."><p>PAN DE PAN</p></a></li>
+                            <li><a href="#."><p>PRODUCTS</p></a></li>
+                            <li><a href="#."><p>STORE</p></a></li>
+                            <li><a href="#."><p>CUSTOMER CENTER</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_bar2"></div>
+                <div class="menu_bar1"></div>
+                <div class="sub_menu">
+                    <div class="sub_area">
+                        <ul>
+                            <li><a href="../de/index.html"><p>대표 인사말</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../bread/index.html"><p>팡드팡 Bread</p></a></li>
+                            <li><a href="../cake/index.html"><p>팡드팡 Cake</p></a></li>
+                            <li><a href="../coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                            <li><a href="../header/header.html"><p>가맹점 개설안내</p></a></li>
+                            <li><a href="../chang/chang.html"><p>창업절차</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../notice/index.html"><p>공지사항</p></a></li>
+                            <li><a href="../story/index.html"><p>팡드팡 Story</p></a></li>
+                            <li><a href="../board/index.html"><p>게시판</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cont s -->
+        <div id="container2">
+            <div id="gnb_cover"></div>
+            <div class="login_cont">
+                <div class="login_area">
+                    <div class="stemp_logo"><span>도장 로고</span></div>
+                    <div class="login_logo"><span>로고 이미지</span></div>
+                    <div class="id">
+                        <label for="login_input">ID를 입력하세요.</label>
+                            <a href="#."><input class="login_input" type="text" placeholder="ID" title="ID를 입력하세요."></div></a>
+                    <div class="password">
+                        <label for="login_input">Password를 입력하세요.</label>
+                            <a href="#."><input class="login_input" type="password" placeholder="PASSWORD" title="password를 입력하세요"></div></a>
+                    <div class="id_search_box"><a href="javascript: $('.id_search_box, .pass_search_box').click()"><p>ID찾기</p></a></div>
+                    <div class="pass_search_box"><a href="javascript: $('.id_search_box, .pass_search_box').click()"><p>PASSWORD찾기</p></a></div>
+                    <div class="signup_box_s"><a href="javascript: $('.signup').click()"><p>회원가입</p></a></div>
+                    <div class="login_box"><a href="javascript: login()"><p>로그인</p></a></div>
+                </div>
+                <a href="javascript: $('.exit').click()"><div class="exit"><span>나가기</span></div></a>
+            </div>
+            <div class="signup_cont">
+                <div class="signup_logo"><span>로고</span></div>
+                <div class="exit"><span>나가기</span></div>
+                <ul class="info_sec">
+                    <li><label for="info_sec li:first-child input" title="ID를 입력하세요.">ID를 입력하세요.</label><a href="#."><input type="text" placeholder="ID를 입력하세요." title="ID를 입력하세요."></a></li>
+                    <li><label for="info_sec li:nth-child(2) input">비밀번호를 입력하세요.</label><a href="#."><input type="password" placeholder="비밀번호를 입력하세요." title="비밀번호를 입력하세요"></a></li>
+                    <li><label for="info_sec li:last-child">비밀번호 재확인.</label><a href="#."><input type="password" placeholder="비밀번호 재확인." title="비밀번호 재확인"></a></li>
+                </ul>
+                <ul class="personal_data">
+                    <li class="name_sec"><a href="#."><input type="text" placeholder="이름" title="이름을 입력하세요."></a></li>
+                    <li class="gender"><a href="javascript: $('.male').click()"><div class="male">남자<span>남자이면 엔터를 누르세요.</span></div></a><a href="javascript: $('.female').click()"><div class="female">여자<span>여자이면 엔터를 누르세요.</span></div></a></li>
+                    <li class="birth">
+                        <ul>
+                            <li class="birth_box">생일</li>
+                            <li class="date"><label for="date input">태어난 년도를 입력하세요. 년(4자리)</label><a href="#."><input type="text" placeholder="년(4자리)" title="태어난 년도를 입력하세요. 년(4자리)"></a><div class="cont_bar"></div></li>
+                            <li class="date"><label for="date input">태어난 월을 입력하세요.</label><a href="#."><input type="text" placeholder="월" title="태어난 월을 입력하세요."></a><div class="cont_bar"></div></li>
+                            <li class="date"><label for="date input">태어난 일을 입력하세요.</label><a href="#."><input type="text" placeholder="일" title="태어난 일을 입력하세요."></a></li>
+                        </ul>
+                    </li>
+                    <li class="email"><label for="email input">이메일을 입력하세요</label><a href="#."><input type="text" placeholder="이메일" title="이메일을 입력하세요."></a></li>
+                    <li class="contact"><label for="contact input">연락처를 입력하세요.</label><a href="#."><input type="text" placeholder="연락처" title="연락처를 입력하세요."></a></li>
+                </ul>
+                <a href="javascript: signup()"><div class="signup_box">회원가입</div></a>
+            </div>
+            <div class="search">
+                <div class="search_area">
+                    <div class="stemp_logo"></div>
+                    <div class="login_logo"></div>
+                    <div class="name_s"><label for="name_s input">이름을 입력하세요.</label><a href="#."><input type="text" placeholder="이름" title="이름을 입력하세요."></a></div>
+                    <div class="email_s"><label for="email_s input">E-mail을 입력하세요.</label><a href="#."><input type="text" placeholder="E-mail" title="E-mail을 입력하세요."></a></div>
+                    <div class="mail_box"><a href="javascript: $('.mail_box').click()"><p>메일전송</p></a></div>
+                    <div class="s_box">
+                        <div class="s_id"><a href="javascript: $('.s_id').click()"><p>ID찾기</p></a></div><div class="s_pass"><a href="javascript: $('.s_pass').click()"><p>비밀번호 찾기</p></a></div>
+                    </div>
+                </div>
+                <div class="exit"><span>나가기</span></div>
+            </div>
+            <div class="m_menu">
+                <ul>
+                    <li class="m_logosec">
+                        <a href="./index.html"><div class="menu_logo"><span>로고</span></div></a>
+                        <img class="menu_more" src="img/more.png" alt="메뉴 닫기" width="100%">
+                    </li>
+                    <li class="m_loginsec">
+                        <div class="m_login"><p>LOGIN</p></div>
+                        <div class="m_signup"><p>SIGN UP</p></div>
+                    </li>
+                    <ul class="m_subsec">
+                        <li>
+                            <div class="m_sub_b"><p>PAN DE PAN</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./de/index.html"><p>대표 인사말</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>PRODUCT</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./bread/index.html"><p>팡드팡 Bread</p></a></li>
+                                <li><a href="./cake/index.html"><p>팡드팡 Cake</p></a></li>
+                                <li><a href="./coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>STORE</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                                <li><a href="./header/header.html"><p>가맹점 개설안내</p></a></li>
+                                <li><a href="./chang/chang.html"><p>창업절차</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>CUSTOMER CENTER</p><div class="down_arrow"><span>메뉴 나오기 화살표</span></div></div>
+                            <ul>
+                                <li><a href="./notice/index.html"><p>공지사항</p></a></li>
+                                <li><a href="./story/index.html"><p>팡드팡 Story</p></a></li>
+                                <li><a href="./board/index.html"><p>게시판</p></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        <!-- container -->
+        <div id="container">
+          <div class="pic">
+              <div class="pic2"><img src="./img/bb.jpg" width="1920px" alt="배경"></div>
+              <div class="boxj">
+               <div class="boxj2"></div>
+               <div class= "boxi"> 
+                <h2>천연 발효란?</h2>
+                <p>곡물이나 과일등을 발효시켜 얻은 천연 이스트에 다시 밀가루와 물을 더해<br>
+                   &nbsp;&nbsp;&nbsp;빵 만들기에 최적화 된 상태로 만든 천연발효종(유산균 발효종)을<br><br>
+                   기본 40가지 메뉴 외 시즌, 이벤트에 따라 3~8가지 신메뉴가 추가됩니다. </p>
+                <ul>
+                 <li class="br1"><img src="./img/br_img/br1.png" width="80%" alt="시몬케익"></li>
+                  <li class="br2"><img src="./img/br_img/br2.png" width="80%" alt="옥수수파운드"></li>
+                  <li class="br3"><img src="./img/br_img/br3.png" width="80%" alt="완두앙금"></li>
+                  <li class="br4"><img src="./img/br_img/br4.png" width="80%" alt="단팥빵"></li>
+                  <li class="br5"><img src="./img/br_img/br5.png" width="80%" alt="국진이빵"></li>
+                  <li class="br6"><img src="./img/br_img/br6.png" width="80%" alt="찰스틱"></li>
+                  <li class="br7"><img src="./img/br_img/br7.png" width="80%" alt="슈크림"></li>
+                  <li class="br8"><img src="./img/br_img/br8.png" width="80%" alt="잡곡식빵"></li>
+                  <li class="br9"><img src="./img/br_img/br9.png" width="80%" alt="흑미찜"></li>
+                  <li class="br10"><img src="./img/br_img/br10.png" width="80%" alt="소보루"></li>
+                  <li class="br11"><img src="./img/br_img/br11.png" width="80%" alt="치즈머핀"></li>
+                  <li class="br12"><img src="./img/br_img/br12.png" width="80%" alt="나비파이"></li>
+                  <li class="br13"><img src="./img/br_img/br13.png" width="80%" alt="녹차깨찰빵"></li>
+                  <li class="br14"><img src="./img/br_img/br14.png" width="80%" alt="찹쌀도넛"></li>
+                  <li class="br15"><img src="./img/br_img/br15.png" width="80%" alt="크림치즈카스테라"></li>
+                  <li class="br16"><img src="./img/br_img/br16.png" width="80%" alt="모카빵"></li>
+                  <li class="br17"><img src="./img/br_img/br17.png" width="80%" alt="호두과자"></li>
+                  <li class="br18"><img src="./img/br_img/br18.png" width="80%" alt="옥수수식빵"></li>
+                  <li class="br19"><img src="./img/br_img/br19.png" width="80%" alt="클로렐라빵"></li>
+                  <li class="br20"><img src="./img/br_img/br20.png" width="80%" alt="클로렐라도넛"></li>
+                  <li class="br21"><img src="./img/br_img/br21.png" width="80%" alt="가또머핀"></li>
+                  <li class="br22"><img src="./img/br_img/br22.png" width="80%" alt="보리카스테라"></li>
+                  <li class="br23"><img src="./img/br_img/br23.png" width="80%" alt="베이비마들렌"></li>
+                  <li class="br24"><img src="./img/br_img/br24.png" width="80%" alt="비스켓슈"></li>
+                  <li class="br25"><img src="./img/br_img/br25.png" width="80%" alt="누네띠네"></li>
+                  <li class="br26"><img src="./img/br_img/br26.png" width="80%" alt="레오타드"></li>
+                  <li class="br27"><img src="./img/br_img/br27.png" width="80%" alt="오키나와"></li>
+                  <li class="br28"><img src="./img/br_img/br28.png" width="80%" alt="밀크식빵"></li>
+                  <li class="br29"><img src="./img/br_img/br29.png" width="80%" alt="바게트"></li>
+                  <li class="br30"><img src="./img/br_img/br30.png" width="80%" alt="마늘스틱"></li>
+                  <li class="br31"><img src="./img/br_img/br31.png" width="80%" alt="스위트롤"></li>
+                </ul>   
+               </div>
+              </div>
+         
+         </div>
+         
+         <div class="bread5"><img src="./img/bread12.png" width="100%" ></div> 
+         <div class="br5_back">
+          <div class="br5_box"><b>BREAD</b></div>
+          <ul>
+                  <li class="br1"><img src="./img/br_img/br1.png" width="80%" alt="시몬케익"></li>
+                  <li class="br2"><img src="./img/br_img/br2.png" width="80%" alt="옥수수파운드"></li>
+                  <li class="br3"><img src="./img/br_img/br3.png" width="80%" alt="완두앙금"></li>
+                  <li class="br4"><img src="./img/br_img/br4.png" width="80%" alt="단팥빵"></li>
+                  <li class="br5"><img src="./img/br_img/br5.png" width="80%" alt="국진이빵"></li>
+                  <li class="br6"><img src="./img/br_img/br6.png" width="80%" alt="찰스틱"></li>
+                  <li class="br7"><img src="./img/br_img/br7.png" width="80%" alt="슈크림"></li>
+                  <li class="br8"><img src="./img/br_img/br8.png" width="80%" alt="잡곡식빵"></li>
+                  <li class="br9"><img src="./img/br_img/br9.png" width="80%" alt="흑미찜"></li>
+                  <li class="br10"><img src="./img/br_img/br10.png" width="80%" alt="소보루"></li>
+                  <li class="br11"><img src="./img/br_img/br11.png" width="80%" alt="치즈머핀"></li>
+                  <li class="br12"><img src="./img/br_img/br12.png" width="80%" alt="나비파이"></li>
+                  <li class="br13"><img src="./img/br_img/br13.png" width="80%" alt="녹차깨찰빵"></li>
+                  <li class="br14"><img src="./img/br_img/br14.png" width="80%" alt="찹쌀도넛"></li>
+                  <li class="br15"><img src="./img/br_img/br15.png" width="80%" alt="크림치즈카스테라"></li>
+                  <li class="br16"><img src="./img/br_img/br16.png" width="80%" alt="모카빵"></li>
+                  <li class="br17"><img src="./img/br_img/br17.png" width="80%" alt="호두과자"></li>
+                  <li class="br18"><img src="./img/br_img/br18.png" width="80%" alt="옥수수식빵"></li>
+                  <li class="br19"><img src="./img/br_img/br19.png" width="80%" alt="클로렐라빵"></li>
+                  <li class="br20"><img src="./img/br_img/br20.png" width="80%" alt="클로렐라도넛"></li>
+                  <li class="br21"><img src="./img/br_img/br21.png" width="80%" alt="가또머핀"></li>
+                  <li class="br22"><img src="./img/br_img/br22.png" width="80%" alt="보리카스테라"></li>
+                  <li class="br23"><img src="./img/br_img/br23.png" width="80%" alt="베이비마들렌"></li>
+                  <li class="br24"><img src="./img/br_img/br24.png" width="80%" alt="비스켓슈"></li>
+                  <li class="br25"><img src="./img/br_img/br25.png" width="80%" alt="누네띠네"></li>
+                  <li class="br26"><img src="./img/br_img/br26.png" width="80%" alt="레오타드"></li>
+                  <li class="br27"><img src="./img/br_img/br27.png" width="80%" alt="오키나와"></li>
+                  <li class="br28"><img src="./img/br_img/br28.png" width="80%" alt="밀크식빵"></li>
+                  <li class="br29"><img src="./img/br_img/br29.png" width="80%" alt="바게트"></li>
+                  <li class="br30"><img src="./img/br_img/br30.png" width="80%" alt="마늘스틱"></li>
+                  <li class="br31"><img src="./img/br_img/br31.png" width="80%" alt="스위트롤"></li>
+                </ul>
+         </div>   
+        </div>   
+        <!-- foot s -->
+        <div id="footer">
+            <div class="foot_area">
+                <div class="foot_text"><strong>PAN DE PAN&nbsp;</strong><p>대구시 중구 동덕로 30길 110(삼덕3가 137-4)</p>
+                    <em>COPYRIGHT BY&nbsp;</em><b>PAN DE PAN&nbsp;</b><em>ALL RIGHT RESERVED.</em></div>
+                <div class="foot_tel"><strong>TEL. 1588-4459</strong></div>
+            </div>
+        </div>
+    </div>
+  </div>      
+    <script type="text/javascript" src="./js/script.js"></script>
+   
+</body>
+</html>

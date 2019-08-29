@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>PAN DE PAN</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="skipnavigation">
+            <a href="javascript: $('#skipnavigation a:eq(0)').click()">메뉴로 가기</a>
+            <a href="javascript: $('#skipnavigation a:eq(1)').click()">메인으로 가기</a>
+        </div>
+        <div id="header">
+            <img src="./img/header.jpg" width="100%" alt="검은 박스">
+            <div class="mo_head_cont">
+                <div class="mo_logo_area">
+                    <a href="../index.html"><h1><img src="./img/mo_logo.png" width="100%" alt="로고"></h1></a>
+                </div>
+                <div class="gnb_more">
+                    <img src="./img/more.png" width="100%">
+                </div>
+            </div>
+            <div class="head_top">
+                <div class="gnb_sec">
+                    <div class="gnb_area">
+                        <ul>
+                            <li><p  class="login">Login</p></li>
+                            <li><p class="signup">Sign Up</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="head_bt">
+                <div class="menu_sec">
+                    <div class="logo_area">
+                        <h1><a href="../index.html"><div class="logo"></div></a></h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><p>PAN DE PAN</p></li>
+                            <li><p>PRODUCTS</p></li>
+                            <li><p>STORE</p></li>
+                            <li><p>CUSTOMER CENTER</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_bar2"></div>
+                <div class="menu_bar1"></div>
+                <div class="sub_menu">
+                    <div class="sub_area">
+                        <ul>
+                            <li><a href="../de/index.html"><p>대표 인사말</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../bread/index.html"><p>팡드팡 Bread</p></a></li>
+                            <li><a href="../cake/index.html"><p>팡드팡 Cake</p></a></li>
+                            <li><a href="../coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                            <li><a href="../header/header.html"><p>가맹점 개설안내</p></a></li>
+                            <li><a href="../chang/chang.html"><p>창업절차</p></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../notice/index.html"><p>공지사항</p></a></li>
+                            <li><a href="../story/index.html"><p>팡드팡 Story</p></a></li>
+                            <li><a href="../board/index.html"><p>게시판</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cont s -->
+        <div id="container2">
+            <div class="head_area">
+                <img src="img/header.jpg" width="100%">
+            </div>
+            <div id="gnb_cover"></div>
+            <div class="login_cont">
+                <div class="login_area">
+                    <div class="stemp_logo"></div>
+                    <div class="login_logo"></div>
+                    <div class="id"><input class="login_input" type="text" placeholder="ID"></div>
+                    <div class="password"><input class="login_input" type="password" placeholder="PASSWORD"></div>
+                    <div class="id_search_box"><p>ID찾기</p></div>
+                    <div class="pass_search_box"><p>PASSWORD찾기</p></div>
+                    <div class="signup_box_s"><p>회원가입</p></div>
+                    <div class="login_box"><p>로그인</p></div>
+                </div>
+                <div class="exit"></div>
+            </div>
+            <div class="signup_cont">
+                <div class="signup_logo"></div>
+                <div class="exit"></div>
+                <ul class="info_sec">
+                    <li><input type="text" placeholder="ID를 입력하세요."></li>
+                    <li><input type="password" placeholder="비밀번호를 입력하세요."></li>
+                    <li><input type="password" placeholder="비밀번호 재확인."></li>
+                </ul>
+                <ul class="personal_data">
+                    <li class="name_sec"><input type="text" placeholder="이름"></li>
+                    <li class="gender"><div class="male">남자</div><div class="female">여자</div></li>
+                    <li class="birth">
+                        <ul>
+                            <li class="birth_box">생일</li>
+                            <li class="date"><input type="text" placeholder="년(4자리)"><div class="cont_bar"></div></li>
+                            <li class="date"><input type="text" placeholder="월"><div class="cont_bar"></div></li>
+                            <li class="date"><input type="text" placeholder="일"></li>
+                        </ul>
+                    </li>
+                    <li class="email"><input type="text" placeholder="이메일"></li>
+                    <li class="contact"><input type="text" placeholder="연락처"></li>
+                </ul>
+                <div class="signup_box">회원가입</div>
+            </div>
+            <div class="search">
+                <div class="search_area">
+                    <div class="stemp_logo"></div>
+                    <div class="login_logo"></div>
+                    <div class="name_s"><input type="text" placeholder="이름"></div>
+                    <div class="email_s"><input type="text" placeholder="E-mail"></div>
+                    <div class="mail_box"><p>메일전송</p></div>
+                    <div class="s_box">
+                        <div class="s_id"><p>ID찾기</p></div><div class="s_pass"><p>비밀번호 찾기</p></div>
+                    </div>
+                </div>
+                <div class="exit"></div>
+            </div>
+            <div class="m_menu">
+                <ul>
+                    <li class="m_logosec">
+                        <a href="../index.html"><div class="menu_logo"></div></a>
+                        <img class="menu_more" src="img/more.png" width="100%">
+                    </li>
+                    <li class="m_loginsec">
+                        <div class="m_login"><p>LOGIN</p></div>
+                        <div class="m_signup"><p>SIGN UP</p></div>
+                    </li>
+                    <ul class="m_subsec">
+                        <li>
+                            <div class="m_sub_b"><p>PAN DE PAN</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../de/index.html"><p>대표 인사말</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>PRODUCT</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../bread/index.html"><p>팡드팡 Bread</p></a></li>
+                                <li><a href="../cake/index.html"><p>팡드팡 Cake</p></a></li>
+                                <li><a href="../coffee/index.html"><p>팡드팡 coffee</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>STORE</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../jione/jione.html"><p>가맹점 지원안내</p></a></li>
+                                <li><a href="../header/header.html"><p>가맹점 개설안내</p></a></li>
+                                <li><a href="../chang/chang.html"><p>창업절차</p></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="m_sub_b"><p>CUSTOMER CENTER</p><div class="down_arrow"></div></div>
+                            <ul>
+                                <li><a href="../notice/index.html"><p>공지사항</p></a></li>
+                                <li><a href="../story/index.html"><p>팡드팡 Story</p></a></li>
+                                <li><a href="../board/index.html"><p>게시판</p></a></li>
+                            </ul>
+                </ul>
+            </div>
+        </div>
+        <!--container-->
+        <div id="container">
+           <div class="coffee"><img src="./img/coffe5.png"  width="1922px" alt="커피잔"  ></div>
+        <div class="background1"><img src="./img/black.png"  width="1922px" alt="검은배경"  ></div>    
+        <div class="co_backg"> 
+           <div class="box">
+            <div class="box_in">  
+             <p>팡드팡 coffee<br><br>팡드팡 커피와 함께 여유를 느껴보세요.</p> 
+             <ul class="coffee3">  
+               <li><img src="./img/coffee2.png"  width="50%" alt="아이스아메리카노"  > </li>
+               <li><img src="./img/coffee3.png"  width="50%" alt="아메리카노"   ></li>
+             </ul> 
+             <dl>
+               <dt>1.팡드팡과 국내 최고 커피 브랜드 Super Coffee와의 제휴<br></dt>
+                 <dd><br><br>Super Coffee 2016년에 설립된 Super Coffee는 무역업을 통해 얻은 글로벌 커피 비즈니스<br><br>
+                     트렌드와 인사이트를 기반으로 2016년부터 본격적인 원두커피와 제조사업을 시작,<br><br>
+                     연간 50000t 이상을 생상하는 명실상부 국내 최고의 원두 전문 제조 업체입니다.<br><br></dd>  
+               
+               <dt>2. Haccp 인증된 루소 커피</dt>
+                 <dd><br><br>Haccp인증이란?<br><br>
+                     Super Coffee가 생상하는 원두제품에 대한 품질과 안전성을 원재료 입고부터 최종 소비자에게<br><br>
+                     제공되기 전 각 단계에서 발생 가능한 위해요소를 분석해 사전에 제거하는 식품안전관리 제도입니다.<br><br></dd>  
+               
+               <dt>3. 루소커피가 사용되고 있는 브랜드<br></dt>
+                 <dd><br><br>임진우, 이충민, 조배경이 우리와 같은 루소커피를 사용하고 있습니다.</dd>  
+             </dl>   
+             <div class="haccp_logo"></div>   
+            </div>  
+           </div>   
+           <div class="co_menu">
+            <div class="coffee_box1">    
+             <h2>TRUE COFFEE</h2>
+             <ul>
+                <li>아메리카노</li>
+                <li>카페라떼</li> 
+                <li>바닐라 라떼</li> 
+                <li>카페모카</li> 
+                <li>카라멜 마끼야또</li> 
+             </ul>  
+             <ul>
+                <li>AmeriCano</li>
+                <li>Cafe Latte</li>
+                <li>Vanilla Latte</li>
+                <li>Caffe Mocca</li>
+                <li>Caramel Macchiato</li>
+             </ul>  
+            </div>     
+            <div class="coffee_box2">    
+             <h2>TRUE LATTEE</h2>
+             <ul>
+                <li>오곡라떼</li>
+                <li>녹차라떼</li> 
+                <li>초코라떼</li> 
+                <li>고구마라떼</li> 
+                <li>따뜻한 우유</li> 
+             </ul>  
+             <ul class="true">
+                 <li>FiveGrains Latte</li>
+                 <li>GreenTea Latte</li>
+                 <li>Chocho Latte</li>
+                 <li>Sweet Potato Latte</li>
+                 <li>Milk</li>
+             </ul>
+            </div>     
+            <div class="coffee_box3">    
+             <h2>TRUE CCINO</h2>
+             <dl>
+               <dt>YOGURT</dt>
+                <dd>플레인</dd>  
+                <dd>딸기</dd>  
+                <dd>블루베리</dd>
+                <dd>복숭아</dd>  
+               <dt>CHOCO</dt>
+                <dd>민트초코</dd>  
+                <dd>브라우니가 오레 </dd>  
+               <dt>ADE</dt>
+                <dd>오렌지</dd>  
+                <dd>자몽</dd>  
+             </dl>     
+             <ul>
+               <li>Plain</li> 
+               <li>Strawberry</li>
+               <li>Blueberry</li>
+               <li>Peach</li>
+             </ul>   
+             <ul>
+               <li>Mint chocolate</li> 
+               <li>Brownie au lait</li>
+             </ul>
+             <ul>
+               <li>Orange Ade</li> 
+               <li>Grapefruit Ade</li>
+             </ul>     
+            </div>
+            <div class="coffee_box4">    
+             <h2>TRUE TEA</h2>
+             <ul>
+                <li>캐모마일</li>
+                <li>페퍼민트</li> 
+                <li>진주자스민</li> 
+                <li>플라워베리</li> 
+                <li>레이디얼그레이</li>
+                <li>자몽차</li> 
+                <li>고흥유자차</li>
+                <li>복숭아 아이스티</li>
+             </ul>  
+             <ul>
+                 <li>Chamomile Tea</li>
+                 <li>Peppermint Tea</li>
+                 <li>Pearl Jasmine Tea</li>
+                 <li>Flower Berry Tea</li>
+                 <li>Radial Gray Tea</li>
+                 <li>Graperfruit Tea</li>
+                 <li>Goheung Citron Tea</li>
+                 <li>Peack Ice Tea</li>
+             </ul> 
+            </div>  
+               <span class="cup_icon"></span>  
+           </div> 
+          </div> 
+        </div>
+        <!-- foot s -->
+        <div id="footer">
+            <div class="foot_area">
+                <div class="foot_text"><strong>PAN DE PAN&nbsp;</strong><p>대구시 중구 동덕로 30길 110(삼덕3가 137-4)</p>
+                    <em>COPYRIGHT BY&nbsp;</em><b>PAN DE PAN&nbsp;</b><em>ALL RIGHT RESERVED.</em></div>
+                <div class="foot_tel"><strong>TEL. 1588-4459</strong></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/script.js"></script>
+    
+</body>
+</html>
